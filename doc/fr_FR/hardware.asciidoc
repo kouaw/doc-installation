@@ -32,8 +32,20 @@ Soit un total de 115€ pour une box domotique open-source avec une maîtrise co
 
 Soit un total de 195€ pour une box domotique open-source avec une maîtrise complète de son installation
 
-TIP: Il est possible de changer le Razberry par une clef USB Zwave (en revanche il faudra le plugin openzwave en plus sous Jeedom) ou si vous ne voulez pas de Zwave par un Rfxcom, ou une clef enOcean (ou meme le piOcean)
+[panel,primary]
+.Et si je veux pas de razberry ou de Zwave
+--
+Il est possible de changer le Razberry par une clef USB Zwave (en revanche il faudra le plugin openzwave en plus sous Jeedom) ou si vous ne voulez pas de Zwave par un Rfxcom, ou une clef enOcean (ou meme le piOcean)
+--
 
-NOTE: Jeedom est un logiciel qui est et restera opensource, son utilisation est entierement gratuite et ne depend pas d'un cloud ou d'un abonnement. Cependant certain plugin qui permettent d'augmenter les capacités de Jeedom ou son utilisation peuvent être payant. Vous pouvez retrouver la liste des plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[ici]
+[panel,primary]
+.C'est gratuit ?
+--
+Jeedom est un logiciel qui est et restera opensource, son utilisation est entierement gratuite et ne depend pas d'un cloud ou d'un abonnement. Cependant certain plugin qui permettent d'augmenter les capacités de Jeedom ou son utilisation peuvent être payant. Vous pouvez retrouver la liste des plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[ici]
+--
 
-NOTE: Vous pouvez voir link:https://blog.jeedom.fr/?p=1215[ici] les avantages des services pack
+[panel,primary]
+.Service pack ? Quezako ?
+--
+Vous pouvez voir link:https://blog.jeedom.fr/?p=1215[ici] les avantages des services pack
+--
