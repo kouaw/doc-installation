@@ -16,6 +16,10 @@ include::jeeboard.asciidoc[]
 include::synology.asciidoc[]
 
 '''
+=== VM
+include::vm.asciidoc[]
+
+'''
 === Autre
 include::other.asciidoc[]
 

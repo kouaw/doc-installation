@@ -8,7 +8,7 @@ Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/
 
 ==== Etape 2 : recuperer l'image de Jeedom
 
-Vous devez télécharger cette link:https://www.dropbox.com/s/qwu2poykv4wcfsd/jeedom_jeeboard_zway_1.167.rar?dl=1[images]
+Vous devez télécharger cette link:https://www.dropbox.com/s/x9ru2nxxi3hotuz/jeedom_mini_1.167-v2.rar?dl=1[images]
 
 image::../images/install_humming_1.PNG[]
 
@@ -43,5 +43,14 @@ Une fois terminé vous avez ce message
 image::../images/install_humming_7.PNG[]
 
 Vous n'avez plus qu'a mettre la carte SD dans la Jeeboard (ou Hummingboard), à brancher le réseaux et l'alimentation, votre Jeedom va demarrer (5min) et vous devriez le voir sur le réseaux.
+
+[panel,primary]
+.Les identifiants SSH sont
+--
+
+- Nom d'utilisateur : root
+- Mot de passe : Mjeedom96
+
+--
 
 Pour la suite vous pouvez suivre la documentation "Premier pas avec Jeedom"
