@@ -1,15 +1,15 @@
-Vous trouverez ici la documentation pour installer Jeedom sur la pluspart des systèmes linux (basé sur debian)
+Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (basé sur debian)
 
-==== Etape 1 : Connectez vous en ssh
+==== Etape 1 : Connexion en ssh
 
-Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre a jour celui-ci : 
+Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour celui-ci : 
 
 ----
 sudo apt-get update
 sudo apt-get dist-upgrade
 ----
 
-==== Etape 2 : Lancez le script d'installation
+==== Etape 2 : Lancement du script d'installation
 
 Voici les 3 commandes pour lancer l'installation de Jeedom : 
 
@@ -21,11 +21,11 @@ sudo ./install.sh
 
 ==== Etape 3 : Installation
 
-Rien de particulier ici il vous suffit de repondre aux questions. Cette étape peut prendre jusqu'a 30min.
+Rien de particulier ici il vous suffit de répondre aux questions. Cette étape peut prendre jusqu'à 30 min.
 
-==== Etape 4 : Donner les droits root à Jeedom
+==== Etape 4 : Définition des droits root à Jeedom
 
-Cette étape bien que non obligatoire est vivement recommande, elle permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redemarrer.
+Cette étape bien que non obligatoire est vivement recommandée, elle permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redémarrer.
 
 ----
 sudo su -
