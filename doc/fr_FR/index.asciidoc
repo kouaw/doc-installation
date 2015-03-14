@@ -1,0 +1,28 @@
+== Installation de Jeedom
+
+=== Description
+Cette doc vous expliquera la démarche pour installer Jeedom.
+
+'''
+=== Sur Raspberry pi 1 et 2
+include::rpi.asciidoc[]
+
+'''
+=== Sur Jeeboard (hummingboard)
+include::jeeboard.asciidoc[]
+
+'''
+=== Sur Synology
+include::synology.asciidoc[]
+
+'''
+=== Autre
+include::other.asciidoc[]
+
+'''
+=== FAQ
+include::faq.asciidoc[]
+
+'''
+=== Troubleshoting
+include::troubleshoting.asciidoc[]
