@@ -1,4 +1,4 @@
-Si vous voulez decouvrir Jeedom vous pouvez aussi le virtualiser sur votre poste, voici la démarche à suivre
+Si vous voulez découvrir Jeedom vous pouvez aussi le virtualiser sur votre poste, voici la démarche à suivre :
 
 ==== Etape 1 : Téléchargement et installation de VMware Player
 
@@ -6,15 +6,15 @@ Vous devez télécharger le logicel VMware Player link:https://my.vmware.com/web
 
 ==== Etape 2 : Téléchargement de la VM Jeedom
 
-Télécharger la vm Jeedom link:https://www.dropbox.com/s/98w4yfj5a8e31z8/jeedom-ubuntu-14.10-1.156.0.rar?dl=0[ici]
+Téléchargez la vm Jeedom link:https://www.dropbox.com/s/98w4yfj5a8e31z8/jeedom-ubuntu-14.10-1.156.0.rar?dl=0[ici]
 
-==== Etape 3 : décompressé l'image de la VM
+==== Etape 3 : Décompression de l'image de la VM
 
-Décompression l'image de la VM Jeedom (si vous n'avez rien pour le decompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar])
+Décompressez l'image de la VM Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar])
 
-==== Etape 4 : lancement de la VM
+==== Etape 4 : Lancement de la VM
 
-Allez dans le dossier de l'image de la VM décompressé et lancer le fichier "Jeedom.vmx" : 
+Allez dans le dossier de l'image de la VM décompressée et lancez le fichier "Jeedom.vmx" : 
 
 image::../images/installation_vmware1.jpg[]
 
