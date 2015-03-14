@@ -1,7 +1,7 @@
 == Installation de Jeedom
 
-=== Description
-Cette doc vous expliquera la démarche pour installer Jeedom.
+=== Matériels
+include::hardware.asciidoc[]
 
 '''
 === Sur Raspberry pi 1 et 2
