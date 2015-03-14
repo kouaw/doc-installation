@@ -1,0 +1,47 @@
+Vous trouverez ici la documentation pas à pas pour installer Jeedom sur les Jeeboard (ou Hummingboard).
+
+TIP: Le nom de l'image Jeedom peut etre different de celui des captures faite dans cette documentation
+
+==== Etape 1 : Installation de win32diskimager
+
+Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/projects/win32diskimager/[ici] puis l'installer sur votre pc
+
+==== Etape 2 : recuperer l'image de Jeedom
+
+Vous devez télécharger cette link:https://www.dropbox.com/s/qwu2poykv4wcfsd/jeedom_jeeboard_zway_1.167.rar?dl=1[images]
+
+image::../images/install_humming_1.PNG[]
+
+==== Etape 3 : décompression de l'image de Jeedom
+
+Décompression l'image de Jeedom (si vous n'avez rien pour le decompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+
+image::../images/install_humming_2.PNG[]
+
+image::../images/install_humming_8.PNG[]
+
+==== Etape 4 : Gravure de l'image sur la carte SD
+
+Inserer votre carte SD dans votre ordinateur puis lancer le logiciel win32diskimager : 
+
+image::../images/install_humming_3.PNG[]
+
+Vérifier que dans "device" c'est bien votre carte SD qui est selectionné puis cliquez sur l'icone dossier pour indiquer le chemin de l'image téléchargé et decompressé (étape 2 et 3) : 
+
+image::../images/install_humming_4.PNG[]
+
+Cliquez sur "Write" pour ecrire l'image, validez l'avertissement : 
+
+image::../images/install_humming_5.PNG[]
+
+Vous pouvez suivre l'avancement de l'écriture de l'image (une dizaine de minute) : 
+
+image::../images/install_humming_6.PNG[]
+
+Une fois terminé vous avez ce message 
+
+image::../images/install_humming_7.PNG[]
+
+Vous n'avez plus qu'a mettre la carte SD dans la Jeeboard (ou Hummingboard), à brancher le réseaux et l'alimentation, votre Jeedom va demarrer (5min) et vous devriez le voir sur le réseaux.
+
+Pour la suite vous pouvez suivre la documentation "Premier pas avec Jeedom"
