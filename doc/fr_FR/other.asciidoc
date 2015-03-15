@@ -21,25 +21,25 @@ sudo ./install.sh
 
 ==== Etape 3 : Installation
 
-Rien de particulier ici il vous suffit de répondre aux questions. Cette étape peut prendre jusqu'à 30 min. Voici le details :
+Rien de particulier ici il vous suffit de répondre aux questions. Cette étape peut prendre jusqu'à 30 min. Voici les détails :
 
-L'installateur vous previent que si nginx est deja installer il va ecraser la configuration par defaut, tapez simplement "yes" puis entrée :
+L'installateur vous prévient que si nginx est déjà installé il va écraser la configuration par défaut, tapez simplement "yes" puis sur entrée :
 
 image::../images/install_other3.PNG[]
 
-Cette écran n'apparait que si vous n'avez encore jamais installé mysql sur votre machine, donnez lui un mot de passe (attention c'est le mot de passe "root" de mysql il faut le retenir)
+Cet écran n'apparaît que si vous n'avez encore jamais installé mysql sur votre machine, donnez lui un mot de passe (attention c'est le mot de passe "root" de mysql il faut le retenir) :
 
 image::../images/install_other4.PNG[]
 
-Retaper le meme mot de passe pour confirmer
+Retaper le même mot de passe pour confirmer :
 
 image::../images/install_other5.PNG[]
 
-Ici redonner le mot de passe precedent, et confirmer (sur la capture le mot de passe est "jeedom")
+Ici redonner le mot de passe précédent, et confirmer (sur la capture le mot de passe est "jeedom") :
 
 image::../images/install_other6.PNG[]
 
-Voila l'installation est finie, l'installateur vous donne l'url pour vous connecter à Jeedom (attention elle change en fonction des installations) et les identifiants par defaut (admin/admin)
+Voilà l'installation est finie, l'installateur vous donne l'url pour vous connecter à Jeedom (attention elle change en fonction des installations) et les identifiants par défaut (admin/admin)
 
 image::../images/install_other7.PNG[]
 
