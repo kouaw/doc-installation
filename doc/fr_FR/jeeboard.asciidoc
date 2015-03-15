@@ -1,6 +1,10 @@
 Vous trouverez ici la documentation pas à pas pour installer Jeedom sur les Jeeboard (ou Hummingboard).
 
-TIP: Le nom de l'image Jeedom peut être différent de celui des captures faites dans cette documentation
+[panel,primary]
+.Correspondance des captures
+--
+Le nom de l'image Jeedom peut être différent de celui des captures faites dans cette documentation
+--
 
 ==== Etape 1 : Installation de win32diskimager
 
