@@ -8,8 +8,8 @@ include::hardware.asciidoc[]
 include::rpi.asciidoc[]
 
 '''
-=== Sur Jeeboard (hummingboard)
-include::jeeboard.asciidoc[]
+=== Sur Jeedomboard (hummingboard)
+include::jeedomboard.asciidoc[]
 
 '''
 === Sur Synology
