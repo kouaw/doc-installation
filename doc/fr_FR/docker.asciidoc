@@ -1,4 +1,3 @@
-:icons:
 Pour découvrir Jeedom vous pouvez aussi le faire tourner dans un conteneur Docker :
 
 [icon="../images/plugin/important.png"]
