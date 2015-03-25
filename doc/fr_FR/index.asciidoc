@@ -19,6 +19,9 @@ include::synology.asciidoc[]
 === VM
 include::vm.asciidoc[]
 
+=== Docker
+include::docker.asciidoc[]
+
 '''
 === Autre
 include::other.asciidoc[]
