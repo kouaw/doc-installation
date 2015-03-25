@@ -2,7 +2,7 @@ Pour découvrir Jeedom vous pouvez aussi le faire tourner dans un conteneur Dock
 
 WARNING: Pré-requis : Avoir une machine ou une VM tournant sous Linux
 
-== Etape 1 : Installation de docker
+==== Etape 1 : Installation de docker
 
 docker est maintenant disponible sur toutes les distributions récentes. Pour l'installer sur une distribution
 
@@ -17,7 +17,7 @@ $ apt-get update
 $ apt-get install docker
 ----
 
-== Etape 2 : Téléchargement de l'image du conteneur Jeedom
+==== Etape 2 : Téléchargement de l'image du conteneur Jeedom
 
 Pour utiliser Jeedom, il faut dans un premier temps télécharger l'image qui va servir à lancer le conteneur.
 
@@ -37,7 +37,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 cquad/jeedom        latest              9a18afc80af8        3 months ago        580.7 MB
 ----
 
-== Etape 3 : Lancement du conteneur
+==== Etape 3 : Lancement du conteneur
 
 Nous allons maintenant lancer le conteneur :
 
