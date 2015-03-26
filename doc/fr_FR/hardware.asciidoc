@@ -18,12 +18,12 @@ Voici 2 configurations "type" pour bien débuter avec Jeedom en Z-Wave :
 
 - Un raspberry ~ 40 €
 - Un razberry ~ 60 €
-- Une carte SD ~ 7 €
+- Une micro carte SD ~ 7 €
 - Alimentation USB ~ 8 € 
 
 Soit un total de 115 € pour une box domotique open-source avec une maîtrise complète de son installation
 
-. Jeeboard dual
+. Jeedomboard dual
 
 - Un Jeedomboard dual ~ 120 € link:http://www.domadoo.fr/fr/informatique/2762-jeedom-ordinateur-monocarte-jeedomboard-dual.html[ici]
 - Un razberry ~ 60 €
