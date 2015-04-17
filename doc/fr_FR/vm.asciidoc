@@ -6,7 +6,7 @@ Vous devez télécharger le logicel VMware Player link:https://my.vmware.com/web
 
 ==== Etape 2 : Téléchargement de la VM Jeedom
 
-Téléchargez la vm Jeedom link:https://www.dropbox.com/s/98w4yfj5a8e31z8/jeedom-ubuntu-14.10-1.156.0.rar?dl=1[64 bits] link:https://www.dropbox.com/s/wvbr33bcwf32wid/jeedom-ubuntu-x86-1.177.zip?dl=1[32 bits]
+Téléchargez la vm Jeedom link:https://www.dropbox.com/s/98w4yfj5a8e31z8/jeedom-ubuntu-14.10-1.156.0.rar?dl=1[64 bits] ou link:https://www.dropbox.com/s/wvbr33bcwf32wid/jeedom-ubuntu-x86-1.177.zip?dl=1[32 bits]
 
 ==== Etape 3 : Décompression de l'image de la VM
 
