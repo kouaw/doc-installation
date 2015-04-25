@@ -14,9 +14,7 @@ sudo apt-get dist-upgrade
 Voici les 3 commandes pour lancer l'installation de Jeedom : 
 
 ----
-wget -q --no-check-certificate https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
-sudo chmod +x install.sh
-sudo ./install.sh
+curl -sS https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh | sudo sh
 ----
 
 ==== Etape 3 : Installation
