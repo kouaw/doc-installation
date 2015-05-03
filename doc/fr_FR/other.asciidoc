@@ -43,7 +43,7 @@ image::../images/install_other7.PNG[]
 
 ==== Etape 4 : Définition des droits root à Jeedom
 
-Cette étape bien que non obligatoire est vivement recommandée, elle permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redémarrer.
+Cette étape permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redémarrer, ou de gerer le réseaux par exemple.
 
 ----
 sudo su -
