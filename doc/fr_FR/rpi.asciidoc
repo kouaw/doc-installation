@@ -48,13 +48,15 @@ image::../images/install_humming_7.PNG[]
 
 Vous n'avez plus qu'à mettre la carte SD dans le Raspberry pi, à brancher le réseau et l'alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
 
-[panel,primary]
-.Les identifiants SSH sont
---
+[icon="../images/plugin/tip.png"]
+[TIP]
+Les identifiants SSH sont :
 
 - Nom d'utilisateur : jeedom
 - Mot de passe : Mjeedom96
 
---
+[icon="../images/plugin/important.png"]
+[IMPORTANT]
+Attention si vous avez une carte SD de plus de 4go n'oubliez pas d'étendre la partition avec la commande raspi-config en ssh
 
 Pour la suite vous pouvez suivre la documentation link:http://doc.jeedom.fr/fr_FR/doc-premiers-pas-Jeedom.html[Premier pas avec Jeedom]
