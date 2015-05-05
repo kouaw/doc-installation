@@ -1,10 +1,9 @@
 Vous trouverez ici la documentation pas à pas pour installer Jeedom sur Raspberry pi 1 ou 2
 
-[panel,primary]
-.Correspondance des captures
---
+[icon="../images/plugin/tip.png"]
+[TIP]
 Le nom de l'image Jeedom peut être différent de celui des captures faites dans cette documentation
---
+
 
 ==== Etape 1 : Installation de win32diskimager
 
@@ -50,10 +49,7 @@ Vous n'avez plus qu'à mettre la carte SD dans le Raspberry pi, à brancher le r
 
 [icon="../images/plugin/tip.png"]
 [TIP]
-Les identifiants SSH sont :
-
-- Nom d'utilisateur : jeedom
-- Mot de passe : Mjeedom96
+Les identifiants SSH sont jeedom/Mjeedom96
 
 [icon="../images/plugin/important.png"]
 [IMPORTANT]
