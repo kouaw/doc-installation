@@ -32,6 +32,10 @@ Dans le champs de recherche tapez "jeedom", selectionnez cquad/jeedom et cliquez
 
 image::../images/install_synology_6.PNG[]
 
+Validez ensuite la demande de version (il est conseillé de prendre la dernière) : 
+
+image::../images/install_synology_14.PNG[]
+
 Cliquez ensuite sur image, ici vous pouvez suivre l'avancement du téléchargement (peux prendre plusieurs dizaine de minutes) : 
 
 image::../images/install_synology_7.PNG[]
