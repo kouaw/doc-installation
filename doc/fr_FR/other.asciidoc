@@ -1,5 +1,9 @@
 Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (basé sur debian)
 
+[icon="../images/plugin/important.png"]
+[IMPORTANT]
+Debian 8 ou Ubuntu 14.04 recommandé
+
 ==== Etape 1 : Connexion en ssh
 
 Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour celui-ci : 
