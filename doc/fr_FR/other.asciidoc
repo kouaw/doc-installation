@@ -11,6 +11,7 @@ Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour
 ----
 sudo apt-get update
 sudo apt-get dist-upgrade
+sudo apt-get install -y curl
 ----
 
 ==== Etape 2 : Lancement du script d'installation
