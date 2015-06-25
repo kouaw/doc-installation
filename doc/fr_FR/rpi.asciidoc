@@ -59,4 +59,4 @@ Attention si vous avez une carte SD de plus de 4go n'oubliez pas d'étendre la p
 [IMPORTANT]
 Si vous êtes sur rpi2 IL NE FAUT SURTOUT PAS L'OVERCLOCKER sous peine d'avoir un système instable avec de nombreuse corruption de carte SD
 
-Pour la suite vous pouvez suivre la documentation link:http://doc.jeedom.fr/fr_FR/doc-premiers-pas-Jeedom.html[Premier pas avec Jeedom]
+Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
