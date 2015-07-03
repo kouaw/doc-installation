@@ -44,21 +44,21 @@ cquad/jeedom        latest              9a18afc80af8        3 months ago        
 Nous allons maintenant lancer le conteneur :
 
 ----
-$ docker run -p 22 -p 8080 -p 9001 -d cquad/jeedom --name jeedom
+$ docker run -p 22 -p 80 -p 9001 -d cquad/jeedom --name jeedom
 ----
 Cette commande va lancer un conteneur nommé jeedom qui se base sur l'image cquad/jeedom
 L'option -p permet d'exposer un port du conteneur, dans notre cas il s'agit du port pour ssh, jeedom et supervisor
 
 [icon="../images/plugin/important.png"]
 [IMPORTANT]
-le service ssh, jeedom et supervisor ne sont pas accessibles sur les port 22,8080 et 9001. Ils sont publiés sur d'autres ports.
+le service ssh, jeedom et supervisor ne sont pas accessibles sur les port 22,80 et 9001. Ils sont publiés sur d'autres ports.
 
 Pour vérifier que le conteneur tourne bien et connaitre le port par lequel accéder à jeedom :
 
 ----
 $ docker ps
 CONTAINER ID        IMAGE                 COMMAND                CREATED             STATUS              PORTS                                                                     NAMES
-0fc1a4f3f584        cquad/jeedom:latest   "/usr/bin/supervisor   About an hour ago   Up About an hour    0.0.0.0:49153->22/tcp, 0.0.0.0:49154->8080/tcp, 0.0.0.0:49155->9001/tcp   jeedom
+0fc1a4f3f584        cquad/jeedom:latest   "/usr/bin/supervisor   About an hour ago   Up About an hour    0.0.0.0:49153->22/tcp, 0.0.0.0:49154->80/tcp, 0.0.0.0:49155->9001/tcp   jeedom
 ----
 
 Dans cet exemple jeedom est accessible à l'adresse suivante http://ip_serveur:49154/
