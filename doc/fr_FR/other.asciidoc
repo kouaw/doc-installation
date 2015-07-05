@@ -2,7 +2,7 @@ Vous trouverez ici la documentation pour installer Jeedom sur la plupart des sys
 
 [icon="../images/plugin/important.png"]
 [IMPORTANT]
-Debian 8 ou Ubuntu 14.04 recommandé
+Debian 8 ou Ubuntu 15.04 recommandé
 
 ==== Etape 1 : Connexion en ssh
 
