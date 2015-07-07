@@ -19,7 +19,9 @@ sudo apt-get install -y curl
 Voici les 3 commandes pour lancer l'installation de Jeedom : 
 
 ----
-curl -sS https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh | sudo sh
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
+chmod +x install.sh
+./install.sh
 ----
 
 ==== Etape 3 : Installation
