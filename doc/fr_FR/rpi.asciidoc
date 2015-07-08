@@ -4,17 +4,17 @@ Vous trouverez ici la documentation pas à pas pour installer Jeedom sur Raspber
 Le nom de l'image Jeedom peut être différent de celui des captures faites dans cette documentation
 
 
-==== Etape 1 : Installation de win32diskimager
+=== Etape 1 : Installation de win32diskimager
 
 Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/projects/win32diskimager/[ici] puis l'installer sur votre pc
 
-==== Etape 2 : Récupération de l'image de Jeedom
+=== Etape 2 : Récupération de l'image de Jeedom
 
 Vous devez télécharger cette link:https://www.dropbox.com/s/v2buf3hbsv2ch27/jeedom_mini_1.188.rar?dl=1[image]
 
 image::../images/install_humming_1.PNG[]
 
-==== Etape 3 : Décompression de l'image de Jeedom
+=== Etape 3 : Décompression de l'image de Jeedom
 
 Décompression l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
 
@@ -22,7 +22,7 @@ image::../images/install_humming_2.PNG[]
 
 image::../images/install_humming_8.PNG[]
 
-==== Etape 4 : Gravure de l'image sur la carte SD
+=== Etape 4 : Gravure de l'image sur la carte SD
 
 Insérer votre carte SD dans votre ordinateur puis lancer le logiciel win32diskimager : 
 
