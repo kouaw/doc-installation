@@ -1,4 +1,3 @@
-:icons:
 == Installation de Jeedom
 
 === Matériels
