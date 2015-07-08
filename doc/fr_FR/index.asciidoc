@@ -1,3 +1,5 @@
+:icons: font
+
 = Installation de Jeedom
 
 == Matériels
