@@ -14,7 +14,6 @@ Attendez jusqu'a ce que l'installation soit finie :
 
 image::../images/install_synology_3.PNG[]
 
-[icon="../images/plugin/important.png"]
 [IMPORTANT]
 Pour avoir accès au paquet Docker il faut absolument avoir DSM 5.2 et un NAS compatible
 
@@ -64,8 +63,6 @@ Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2
 
 image::../images/install_synology_13.PNG[]
 
-
-[icon="../images/plugin/tip.png"]
 [TIP]
 Si vous voulez un accès SSH il vous faut dans les port rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
 

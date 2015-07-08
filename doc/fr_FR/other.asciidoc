@@ -1,6 +1,5 @@
 Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (basé sur debian)
 
-[icon="../images/plugin/important.png"]
 [IMPORTANT]
 Debian 8 ou Ubuntu 15.04 recommandé
 

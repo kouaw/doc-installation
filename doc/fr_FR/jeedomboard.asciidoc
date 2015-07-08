@@ -1,6 +1,5 @@
 Vous trouverez ici la documentation pas à pas pour installer Jeedom sur les Jeedomboard (ou Hummingboard).
 
-[icon="../images/plugin/tip.png"]
 [TIP]
 Le nom de l'image Jeedom peut être différent de celui des captures faites dans cette documentation
 
@@ -47,7 +46,6 @@ image::../images/install_humming_7.PNG[]
 
 Vous n'avez plus qu'à mettre la carte SD dans la Jeedomboard (ou Hummingboard), à brancher le réseau et l'alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
 
-[icon="../images/plugin/tip.png"]
 [TIP]
 Les identifiants SSH sont root/Mjeedom96
 

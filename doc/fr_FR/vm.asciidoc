@@ -22,7 +22,6 @@ Cliquez sur "Play virtual machine", répondez oui à toutes les questions (s’i
 
 image::../images/installation_vmware2.jpg[]
 
-[icon="../images/plugin/tip.png"]
 [TIP]
 Les identifiants SSH sont jeedom/Mjeedom96
 
