@@ -1,16 +1,14 @@
-:icons: font
-
 = Installation de Jeedom
 
 == Matériels
 include::hardware.asciidoc[]
 
 '''
-== Sur Raspberry pi 1 et 2
+== Sur Raspberry pi 1 et 2 (mini)
 include::rpi.asciidoc[]
 
 '''
-== Sur Jeedomboard (hummingboard)
+== Sur Jeedomboard (hummingboard,mini+)
 include::jeedomboard.asciidoc[]
 
 '''
