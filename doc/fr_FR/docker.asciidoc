@@ -44,7 +44,7 @@ cquad/jeedom        latest              9a18afc80af8        3 months ago        
 Nous allons maintenant lancer le conteneur :
 
 ----
-$ docker run -p 22 -p 80 -p 9001 -d cquad/jeedom --name jeedom
+$ docker run --name jeedom -p 22 -p 80 -p 9001 cquad/jeedom
 ----
 Cette commande va lancer un conteneur nommé jeedom qui se base sur l'image cquad/jeedom
 L'option -p permet d'exposer un port du conteneur, dans notre cas il s'agit du port pour ssh, jeedom et supervisor
