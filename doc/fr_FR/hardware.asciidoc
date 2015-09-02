@@ -7,10 +7,10 @@ Jeedom peut être installé sur différents composants hardware :
 
 Vous pouvez aussi acheter une box toute faite avec Jeedom de préinstallé qui contient en plus un service pack (plus de support et service) et des plugins offerts : 
 
-- link:http://www.domadoo.fr/fr/box-domotique/2746-jeedom-pack-de-demarrage-jeedom-mini-z-wave.html[Mini+ seul]
 - link:http://www.domadoo.fr/fr/box-domotique/2747-jeedom-pack-de-demarrage-jeedom-mini-compatible-z-wave.html[Mini+ Z-Wave]
-- link:http://www.domadoo.fr/fr/box-domotique/2748-jeedom-pack-de-demarrage-jeedom-mini-avec-interface-rfxcom-.html[Mini+ RFXCOM]
-- link:http://www.domadoo.fr/fr/box-domotique/2749-jeedom-pack-de-demarrage-jeedom-mini-compatible-z-wave-et-interface-rfxcom.html[Mini+ RFXCOM && Z-Wave]
+- link:http://www.domadoo.fr/fr/box-domotique/2749-jeedom-pack-de-demarrage-jeedom-mini-compatible-z-wave-et-interface-rfxcom.html[Mini+ RFXCOM et Z-Wave]
+- link:http://www.domadoo.fr/fr/box-domotique/2984-jeedom-pack-de-demarrage-jeedom-mini-compatible-enocean.html[Mini+ EnOcean]
+- link:http://www.domadoo.fr/fr/box-domotique/2990-jeedom-pack-de-demarrage-jeedom-mini-compatible-enocean-et-interface-rfxcom.html[Mini+ EnOcean et rfxcom]
 
 Voici 2 configurations "type" pour bien débuter avec Jeedom en Z-Wave :
 
@@ -25,7 +25,7 @@ Soit un total de 115 € pour une box domotique open-source avec une maîtrise c
 
 . Jeedomboard dual
 
-- Un Jeedomboard dual ~ 120 € link:http://www.domadoo.fr/fr/informatique/2762-jeedom-ordinateur-monocarte-jeedomboard-dual.html[ici]
+- Un Jeedomboard dual ~ 119 € link:http://www.domadoo.fr/fr/informatique/2762-jeedom-ordinateur-monocarte-jeedomboard-dual.html[ici]
 - Un razberry ~ 60 €
 - Une micro carte SD ~ 7 €
 - Alimentation USB ~ 8 € 
