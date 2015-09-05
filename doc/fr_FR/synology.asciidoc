@@ -43,7 +43,7 @@ Une fois terminé cliquez sur l'image puis lancer :
 
 image::../images/install_synology_8.PNG[]
 
-Donnez un nom à votre Jeedom ainsi qu'un port local redirigé vers le port 8080 du conteneur, puis faite suivant :
+Donnez un nom à votre Jeedom ainsi qu'un port local redirigé vers le port 80 du conteneur, puis faite suivant :
 
 image::../images/install_synology_9.PNG[]
 
