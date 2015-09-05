@@ -64,6 +64,6 @@ Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2
 image::../images/install_synology_13.PNG[]
 
 [TIP]
-Si vous voulez un accès SSH il vous faut dans les port rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
+Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
 
 Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
