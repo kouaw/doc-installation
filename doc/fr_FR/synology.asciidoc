@@ -59,7 +59,7 @@ Vous pouvez voir sur la page "Vue d'ensemble" le conteneur Jeedom en cours de fo
 
 image::../images/install_synology_12.PNG[]
 
-Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2080, si par exemple votre NAS à l'ip 192.168.0.140 dans la barre d'adresse de votre navigateur faites : 192.168.0.140:2080. Les identifiants par defaut sont admin/admin : 
+Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2080, si par exemple votre NAS à l'ip 192.168.0.140 dans la barre d'adresse de votre navigateur faites : 192.168.0.140:2080. Les identifiants par défaut sont admin/admin : 
 
 image::../images/install_synology_13.PNG[]
 
