@@ -2,11 +2,11 @@ Si vous voulez découvrir Jeedom vous pouvez aussi le virtualiser sur votre post
 
 === Etape 1 : Téléchargement et installation de VMware Player
 
-Vous devez télécharger le logicel VMware Player link:https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/7_0[ici] puis l'installer sur votre pc
+Vous devez télécharger le logicel VMware Player link:https://download3.vmware.com/software/player/file/VMware-player-12.0.0-2985596.exe[ici] puis l'installer sur votre pc
 
 === Etape 2 : Téléchargement de la VM Jeedom
 
-Téléchargez la vm Jeedom link:https://www.dropbox.com/s/98w4yfj5a8e31z8/jeedom-ubuntu-14.10-1.156.0.rar?dl=1[64 bits] ou link:https://www.dropbox.com/s/wvbr33bcwf32wid/jeedom-ubuntu-x86-1.177.zip?dl=1[32 bits]
+Téléchargez la vm Jeedom link:http://94.23.172.220/.dl/jeedom/Jeedom%201.205.zip[64 bits] - link:http://94.23.172.220/.dl/jeedom/Jeedom%201.205.zip.torrent[64 bits torrent] ou link:http://94.23.172.220/.dl/jeedom/Jeedom%20X86%201.205.zip[32 bits] - link:http://94.23.172.220/.dl/jeedom/Jeedom%20X86%201.205.zip.torrent[32 bits torrent]
 
 === Etape 3 : Décompression de l'image de la VM
 
@@ -23,6 +23,7 @@ Cliquez sur "Play virtual machine", répondez oui à toutes les questions (s’i
 image::../images/installation_vmware2.jpg[]
 
 [TIP]
-Les identifiants SSH sont jeedom/Mjeedom96
+Les identifiants SSH sont jeedom/Mjeedom96 ou root/Mjeedom96
+L'utilisateur root ne peut étre utiliser à distance
 
 Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
