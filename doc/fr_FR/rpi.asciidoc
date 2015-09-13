@@ -10,11 +10,19 @@ Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/
 
 === Etape 2 : Récupération de l'image de Jeedom
 
-Vous devez télécharger cette link:http://94.23.172.220/.dl/jeedom/rpi-jeedom-1.205.img[image] link:http://94.23.172.220/.dl/jeedom/rpi-jeedom-1.205.img.torrent[torrent]
+Vous devez télécharger cette link:https://www.dropbox.com/s/v2buf3hbsv2ch27/jeedom_mini_1.188.rar?dl=1[image]
 
 image::../images/install_humming_1.PNG[]
 
-=== Etape 3 : Gravure de l'image sur la carte SD
+=== Etape 3 : Décompression de l'image de Jeedom
+
+Décompression l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+
+image::../images/install_humming_2.PNG[]
+
+image::../images/install_humming_8.PNG[]
+
+=== Etape 4 : Gravure de l'image sur la carte SD
 
 Insérer votre carte SD dans votre ordinateur puis lancer le logiciel win32diskimager : 
 
@@ -39,7 +47,7 @@ image::../images/install_humming_7.PNG[]
 Vous n'avez plus qu'à mettre la carte SD dans le Raspberry pi, à brancher le réseau et l'alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
 
 [TIP]
-Les identifiants SSH sont jeedom/Mjeedom96 ou root/Mjeedom96
+Les identifiants SSH sont jeedom/Mjeedom96
 
 [IMPORTANT]
 Attention si vous avez une carte SD de plus de 4go n'oubliez pas d'étendre la partition avec la commande raspi-config en ssh
