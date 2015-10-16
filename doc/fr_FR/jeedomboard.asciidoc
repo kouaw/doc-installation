@@ -10,10 +10,8 @@ Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/
 
 === Etape 2 : Récupération de l'image de Jeedom
 
-Vous devez télécharger cette link:https://www.dropbox.com/s/r4ltu2nrfglvbey/Jeedom_jeeboard_openzwave_1.205.img.zip?dl=1[image]
-link:https://jeedom.fr/download/Jeedom_jeeboard_openzwave_1.205.img.zip.torrent[torrent]
-link:https://jeedom.fr/download/Jeedom_jeeboard_openzwave_1.205.img.zip[image_de_secours]
-image::../images/install_humming_1.PNG[]
+Vous devez télécharger cette link:https://jeedom.fr/download/Jeedom_jeeboard_1_209.rar[image]
+image:../images/install_humming_1.PNG[]
 
 === Etape 3 : Décompression de l'image de Jeedom
 
