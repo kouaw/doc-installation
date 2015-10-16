@@ -46,6 +46,6 @@ image::../images/install_humming_7.PNG[]
 Vous n'avez plus qu'à mettre la carte SD dans la Jeedomboard (ou Hummingboard), à brancher le réseau et l'alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
 
 [TIP]
-Les identifiants SSH sont root/Mjeedom96
+Les identifiants SSH sont jeedom/Mjeedom96
 
 Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
