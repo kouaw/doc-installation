@@ -10,7 +10,7 @@ Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/
 
 === Etape 2 : Récupération de l'image de Jeedom
 
-Vous devez télécharger cette link:https://www.jeedom.fr/download/img-rpi/img-mini-rpi-1.209.img.zip[image]
+Vous devez télécharger cette link:https://drive.google.com/open?id=0B-SMfvVCe2OEWHpvSFdXdVhVNk0[image]
 
 image::../images/install_humming_1.PNG[]
 
