@@ -6,7 +6,7 @@ Vous devez télécharger le logicel VMware Player link:https://download3.vmware.
 
 === Etape 2 : Téléchargement de la VM Jeedom
 
-Téléchargez la vm Jeedom link:https://drive.google.com/open?id=0B9gdDNCtvjAIdlNaSWpOZHJ1S2s[64 bits] - link:https://jeedom.fr/download/Jeedom%201.205.zip.torrent[64 bits torrent] ou link:https://drive.google.com/open?id=0B9gdDNCtvjAIUVJVdjVmY1ZCV3c[32 bits] - link:https://jeedom.fr/download/Jeedom%20X86%201.205.zip.torrent[32 bits torrent]
+Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#x64#-X.xxx.rar ou jeedom-#x86#-X.xxx.rar
 
 === Etape 3 : Décompression de l'image de la VM
 

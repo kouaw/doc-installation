@@ -25,11 +25,3 @@ include::docker.asciidoc[]
 '''
 == Autre
 include::other.asciidoc[]
-
-'''
-== FAQ
-include::faq.asciidoc[]
-
-'''
-== Troubleshoting
-include::troubleshoting.asciidoc[]
