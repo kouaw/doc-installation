@@ -48,16 +48,13 @@ systemctl restart nginx
 ----
 apt-get -y install ntp ca-certificates unzip curl sudo
 apt-get install apache2 php5 mysql-client mysql-server
-rm /etc/apache2/sites-available/000-default.conf
-wget https://raw.githubusercontent.com/jeedom/core/stable/install/apache_default -O /etc/apache2/sites-available/000-default.conf
-a2ensite 000-default
 systemctl restart apache2
 ----
 
 ==== Création du cron
 
 ----
-echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/core/php/jeeCron.php' >> /dev/null" | crontab -
+echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/html/core/php/jeeCron.php' >> /dev/null" | crontab -
 ----
 
 ==== Droit root à jeedom
@@ -71,13 +68,13 @@ echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
 
 ----
-mkdir -p /var/www
+mkdir -p /var/www/html
 echo 'Jeedom not found install it'
 rm -rf /root/core-*
 wget https://github.com/jeedom/core/archive/stable.zip -O /tmp/jeedom.zip
 unzip -q /tmp/jeedom.zip -d /root/
-cp -R /root/core-*/* /var/www
-cp -R /root/core-*/.htaccess /var/www
+cp -R /root/core-*/* /var/www/html/
+cp -R /root/core-*/.htaccess /var/www/html/
 ----
 
 === Etape 4 : Installation
