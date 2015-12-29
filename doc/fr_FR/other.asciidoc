@@ -31,7 +31,7 @@ Retenez bien le mot de passe mysql que vous avez configuré
 Configuration de l'environement PHP (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
 
 ----
-sed -i 's/max_execution_time = 30/max_execution_time = 300/g' /etc/php5/fpm/php.ini
+sed -i 's/max_execution_time = 30/max_execution_time = 600/g' /etc/php5/fpm/php.ini
 sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 1G/g' /etc/php5/fpm/php.ini
 sed -i 's/post_max_size = 8M/post_max_size = 1G/g' /etc/php5/fpm/php.ini
 sed -i 's/expose_php = On/expose_php = Off/g' /etc/php5/fpm/php.ini
@@ -57,7 +57,7 @@ systemctl restart apache2
 ==== Création du cron
 
 ----
-echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/jeedom/core/php/jeeCron.php' >> /dev/null" | crontab -
+echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/core/php/jeeCron.php' >> /dev/null" | crontab -
 ----
 
 ==== Droit root à jeedom
@@ -68,21 +68,21 @@ echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 
 === Etape 3 : Ajout des fichiers Jeedom
 
-Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www/jeedom) : 
+Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
 
 ----
-mkdir -p /var/www/jeedom
+mkdir -p /var/www
 echo 'Jeedom not found install it'
 rm -rf /root/core-*
 wget https://github.com/jeedom/core/archive/stable.zip -O /tmp/jeedom.zip
 unzip -q /tmp/jeedom.zip -d /root/
-cp -R /root/core-*/* /var/www/jeedom/
-cp -R /root/core-*/.htaccess /var/www/jeedom/
+cp -R /root/core-*/* /var/www
+cp -R /root/core-*/.htaccess /var/www
 ----
 
 === Etape 4 : Installation
 
-Il vous suffit d'aller sur IP_MACHINE_JEEDOM/install/setup.php
+Il vous suffit d'aller sur IP_MACHINE_JEEDOM
 
 image::../images/install_other.PNG[]
 

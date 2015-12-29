@@ -119,7 +119,7 @@ Cochez "Executer ce conteneur lorsque l'assistant a terminé" puis cliquez sur "
 
 === Etape 3 : Configuration de Jeedom
 
-Il vous faut maintenant installer Jeedom, c'est très simple allez sur IP_NAS:9080/install/setup.php
+Il vous faut maintenant installer Jeedom, c'est très simple allez sur IP_NAS:9080
 
 image::../images/install_synology_31.PNG[]
 
