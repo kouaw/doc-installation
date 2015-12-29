@@ -113,10 +113,6 @@ image::../images/install_synology_28.PNG[]
 
 Cochez "Executer le conteneur à l'aide de privilège élevés" puis validez le tout :
 
-image::../images/install_synology_28.PNG[]
-
-Cocher "Executer ce conteneur lorsque l'assistant a terminé" puis cliquez sur "Appliquer".
-
 image::../images/install_synology_29.PNG[]
 
 Cochez "Executer ce conteneur lorsque l'assistant a terminé" puis cliquez sur "Appliquer".
