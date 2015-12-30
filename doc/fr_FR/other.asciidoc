@@ -73,7 +73,6 @@ Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par de
 
 ----
 mkdir -p /var/www/html
-echo 'Jeedom not found install it'
 rm -rf /root/core-*
 wget https://github.com/jeedom/core/archive/stable.zip -O /tmp/jeedom.zip
 unzip -q /tmp/jeedom.zip -d /root/
