@@ -6,7 +6,7 @@ Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseill
 
 === Etape 1 : Connexion en ssh
 
-Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour celui-ci : 
+Vous devez tout d'abord vous connecter en ssh (en root) sur votre linux. Et mettre à jour celui-ci : 
 
 ----
 sudo apt-get update
@@ -23,7 +23,7 @@ Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx 
 ----
 apt-get -y install mysql-client mysql-server
 apt-get -y install nginx-common nginx-full ntp ca-certificates unzip curl sudo
-apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
 ----
 
 [IMPORTANT]
@@ -50,7 +50,9 @@ systemctl restart nginx
 ----
 apt-get -y install ntp ca-certificates unzip curl sudo
 apt-get install apache2 php5 mysql-client mysql-server
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
 systemctl restart apache2
+rm /var/www/html/index.html
 ----
 
 ==== Création du cron
