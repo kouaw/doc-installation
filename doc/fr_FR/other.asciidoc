@@ -9,8 +9,8 @@ Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseill
 Vous devez tout d'abord vous connecter en ssh (en root) sur votre linux. Et mettre à jour celui-ci : 
 
 ----
-sudo apt-get update
-sudo apt-get dist-upgrade
+apt-get update
+apt-get dist-upgrade
 ----
 
 === Etape 2 : Installation des dépendances
