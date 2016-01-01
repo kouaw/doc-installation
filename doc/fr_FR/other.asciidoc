@@ -48,6 +48,7 @@ systemctl restart nginx
 ==== APACHE
 
 ----
+mkdir -p /var/www/html/log
 apt-get -y install ntp ca-certificates unzip curl sudo
 apt-get install apache2 php5 mysql-client mysql-server
 apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
