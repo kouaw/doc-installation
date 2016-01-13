@@ -1,0 +1,76 @@
+Um Jeedom zu entdecken, können Sie es auch in einem Docker-Container arbeiten lassen :
+
+[WICHTIG]
+Voraussetzung : Mit einer Maschine oder einer unter Linux arbeitender VM 
+
+=== Schritt 1 : Docker installieren 
+
+Docker ist jetzt auf allen aktuellen Distributionen verfügbar. Um auf einer Distribution zu installieren
+
+* die Basis rpm 
+----
+$ yum install docker
+----
+
+* die Basis deb
+----
+$ apt-get update
+$ apt-get install docker
+$ apt-get install docker.io
+----
+
+==== Schritt 2 : Laden Sie das Abbild des Jeedom Containers 
+
+Um Jeedom zu verwenden, müssen wir zunächst das Abbild laden, das verwendet wird, um den Behälter zu starten.
+
+----
+$ docker pull cquad/jeedom
+----
+
+Man kann dann prüfen, ob der Abbild erhältlich ist :
+
+---- 
+$ docker images
+----
+
+Dieser Befehl sollte uns eine Linie mit cquad/jeedom anzeigen.
+----
+REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
+cquad/jeedom latest 9a18afc80af8 3 months ago 580.7 MB
+----
+
+=== Schritt 3 : Starten des Containers
+
+Wir werden nun den Container starten :
+
+----
+$ docker run --name jeedom -p 22 -p 80 -p 9001 cquad/jeedom
+----
+Dieser Befehl wird ein Container mit dem Namen jeedom, das auf das Abbild cquad/jeedom basiert starten
+Mit der Option -p können Sie einen Port des Behälters freigeben, in unserem Fall ist es der Port für SSH und jeedom Supervisor
+
+[WICHTIG]
+Der SSH Dienst, Jeedom und Supervisor sind nicht auf den Ports 22,80 und 9001 zugänglich. Sie sind auf anderen Ports zugänglich. 
+
+Um zu überprüfen dass der Container problemlos läuft und den  jeedom Zugangs Port zu kennen :
+
+----
+$ docker ps
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+0fc1a4f3f584 cquad/jeedom:latest "/usr/bin/supervisor About an hour ago Up About an hour 0.0.0.0:49153->22/tcp, 0.0.0.0:49154->80/tcp, 0.0.0.0:49155->9001/tcp jeedom
+----
+
+In diesem Beispiel ist Jeedom unter der folgende Adresse http://server_ip:49154/
+
+[TIP]
+Wenn Sie ein Gerät an den  Container anschließen müssen, ist es notwendig, den Container mit der Option hinzufügen zu starten --device=chemin_host:chemin_conteneur. zum Beispiel --device=/dev/ttyS0:/dev/ttyS0
+
+
+.Die SSH Zugangsdaten
+--
+- Benutzername : root
+- Passwort : jeedom
+--
+
+
+Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.

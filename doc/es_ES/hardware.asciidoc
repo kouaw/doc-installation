@@ -1,0 +1,42 @@
+Jeedom peut être installé sur différents composants hardware : 
+
+- una Raspberry pi 1 o 2
+- una Jeeboard (hummingboard) i1, i2 o i4
+- un nas Synology
+- todos los sistemas operativos Linux (basado en Debian de preferencia)
+
+También puede comprar una caja confeccionada con Jeedom preinstalado que contiene, además, un Service Pack (además de soporte y servicio) y los plugins disponibles: 
+
+- link:http://www.domadoo.fr/fr/box-domotique/2747-jeedom-pack-de-demarrage-jeedom-mini-compatible-z-wave.html[Mini+ Z-Wave]
+- link:http://www.domadoo.fr/fr/box-domotique/2749-jeedom-pack-de-demarrage-jeedom-mini-compatible-z-wave-et-interface-rfxcom.html[Mini+ RFXCOM et Z-Wave]
+- link:http://www.domadoo.fr/fr/box-domotique/2984-jeedom-pack-de-demarrage-jeedom-mini-compatible-enocean.html[Mini+ EnOcean]
+- link:http://www.domadoo.fr/fr/box-domotique/2990-jeedom-pack-de-demarrage-jeedom-mini-compatible-enocean-et-interface-rfxcom.html[Mini+ EnOcean et rfxcom]
+
+Voici 2 configurations "type" pour bien débuter avec Jeedom en Z-Wave :
+
+. Raspberry pi 2 : 
+
+- Un raspberry ~ 40 €
+- Un razberry ~ 60 €
+- Una Tarjeta Micro SD ~ 7 €
+- Fuente de Alimentacion USB ~ 8 € 
+
+Un total de 115€ para un completo dispositivo domótico de código abierto.
+
+. Jeedomboard dual
+
+- Un Jeedomboard dual ~ 119 € link:http://www.domadoo.fr/fr/informatique/2762-jeedom-ordinateur-monocarte-jeedomboard-dual.html[ici]
+- Un razberry ~ 60 €
+- Una Tarjeta Micro SD ~ 7 €
+- Fuente de Alimentacion USB ~ 8 € 
+
+Un total de 195€ para un completo dispositivo domótico de código abierto.
+
+[TIP]
+Il est possible de changer le Razberry par une clef USB Z-Wave (en revanche il faudra le plugin openzwave en plus sous Jeedom) ou si vous ne voulez pas de Z-Wave par un Rfxcom, ou une clef enOcean (ou même le piOcean)
+
+[TIP]
+Jeedom est un logiciel qui est et restera opensource, son utilisation est entièrement gratuite et ne dépend pas d'un cloud ou d'un abonnement. Cependant certains plugins qui permettent d'augmenter les capacités de Jeedom ou son utilisation peuvent être payants. Vous pouvez retrouver la liste des plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[ici]
+
+[TIP]
+Service pack ? Quézako ? Vous pouvez voir link:https://blog.jeedom.fr/?p=1215[ici] les avantages des services pack

@@ -1,0 +1,59 @@
+Hier finden Sie die Dokumentation um Jeedom auf den meisten Linux-Systemen zu installieren (basierend auf Debian)
+
+[IMPORTANT]
+Debian 8 oder Ubuntu 15.04 empfohlen
+
+=== Schritt 1 : SSH-Verbindung
+
+Zuerst müssen Sie sich in SSH auf Ihrem Linux anmelden. Aktualisieren Sie dieses und führen dafür die folgenden Schritte aus: 
+
+----
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install -y curl wget
+----
+
+=== Schritt 2 : Starten Sie das Installationsskript
+
+Hier sind 3 Befehle, um die Jeedom Installation zu starten : 
+
+----
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
+chmod +x install.sh
+./install.sh
+----
+
+=== Schritt 3 : Installation
+
+Das ist nichts besonderes, hier einfach Fragen beantworten. Dieser Schritt kann bis zu 30 Minuten dauern. Hier sind die Details :
+
+Das Installationsprogramm warnt Sie, wenn NGINX bereits installiert ist wird es die Standard-Konfiguration überschreiben, geben Sie einfach "ja" ein dann die Enter-Taste :
+
+image::../images/install_other3.PNG[]
+
+Dieser Bildschirm wird nur angezeigt, wenn Sie kein MYSQL auf Ihrem Computer installiert haben, vergeben Sie ein Passwort (Achtung, es ist das MYSQL "root" Passwort  mann muß es sich merken):
+
+image::../images/install_other4.PNG[]
+
+Geben Sie das gleiche Passwort zu bestätigen ein :
+
+image::../images/install_other5.PNG[]
+
+Hier wieder das vorherige Passwort eingeben, und bestätigen Sie  (in der Abbildung ist das Passwort "jeedom") :
+
+image::../images/install_other6.PNG[]
+
+Die Installation ist abgeschlossen, das Installationsprogramm gibt Ihnen die URL(Achtung es ändert sich entsprechend den Anlage) und die Standard-Zugangsdaten (admin/admin) zum  verbinden mit Jeedom  aus
+
+image::../images/install_other7.PNG[]
+
+=== Schritt 4 : Festlegen der ROOT Rechte in Jeedom
+
+Dieser Schritt ermöglicht es Jeedom mehr Rechte zu geben und somit in der Lage zu sein, um zum Beispiel, abzuschalten, neu zu starten oder die Verwaltung von Netzwerken .
+
+----
+sudo su -
+echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
+----
+
+Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.

@@ -1,0 +1,69 @@
+Qui è presente una documentazione passo-passo per installare Jeedom su Synology (Minimo DSM 5.2).
+
+=== Passo 1 : Installazione di Docker
+
+Vai al centro pacchetti : 
+
+image::../images/install_synology_1.PNG[]
+
+Clicca Tutti e poi installa il pacchetto Docker
+
+image::../images/install_synology_2.PNG[]
+
+Attendi fino alla fine dell\'installazione : 
+
+image::../images/install_synology_3.PNG[]
+
+[IMPORTANTE]
+Per accedere a questo pacchetto, Docker necessita DSM 5.2 ed un NAS compatibile
+
+=== Passo 2 : Recupero ed installazione immagine Jeedom
+
+Lancia l'applicazione Docker : 
+
+image::../images/install_synology_4.PNG[]
+
+Clicca "Registro" : 
+
+image::../images/install_synology_5.PNG[]
+
+Nel campo di ricerca, scrivi "jeedom", seleziona cquad/jeedom e clicca scarica : 
+
+image::../images/install_synology_6.PNG[]
+
+Dopodiché conferma la versione dell'applicazione (è consigliabile indicare l'ultima) : 
+
+image::../images/install_synology_14.PNG[]
+
+Dopodiché clicca Immagine per monitorare lo stato di avanzamento del download (può richiedere diversi minuti) : 
+
+image::../images/install_synology_7.PNG[]
+
+Quando completato, clicca sull'immagine ed esegui : 
+
+image::../images/install_synology_8.PNG[]
+
+Inserite un nome per Jeedom e una porta locale reindirizzata alla porta 80 del contenitore, poi seguite:
+
+image::../images/install_synology_9.PNG[]
+
+Abilita "Abilita risorse limitate" e seleziona Medio, e successivamente: 
+
+image::../images/install_synology_10.PNG[]
+
+Abilita "Esegui questo contenitore quando il la procedura guidata è terminata" dopodiché clicca "Applica" 
+
+image::../images/install_synology_11.PNG[]
+
+Puoi vedere nella "Panoramica" il contenitore Jeedom attualmente in esecuzione : 
+
+image::../images/install_synology_12.PNG[]
+
+Resta per voi per connettersi alla Jeedom andando a IP_NAS 2080, per esempio, se l'IP del NAS è  192.168.0.140, nella barra degli indirizzi del browser inserire: 192.168.0.140:2080. La password predefinita è admin / admin: 
+
+image::../images/install_synology_13.PNG[]
+
+[TIP]
+Se vuoi l'accesso SSH è necessario reindirizzare una porta locale alla porta 22 del contenitore, per SSH le password sono root / jeedom
+
+Per il resto della documentazione è possibile accedere a https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Inizia con Jeedom]

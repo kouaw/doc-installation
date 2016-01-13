@@ -1,0 +1,59 @@
+Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (basé sur debian)
+
+[IMPORTANTE]
+Debian 8 ou Ubuntu 15.04 recommandé
+
+=== Etape 1 : Connexion en ssh
+
+Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour celui-ci : 
+
+----
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install -y curl wget
+----
+
+=== Etape 2 : Lancement du script d'installation
+
+Voici les 3 commandes pour lancer l'installation de Jeedom : 
+
+----
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
+chmod +x install.sh
+./install.sh
+----
+
+=== Etape 3 : Installation
+
+Rien de particulier ici il vous suffit de répondre aux questions. Cette étape peut prendre jusqu'à 30 min. Voici les détails :
+
+L'installateur vous prévient que si nginx est déjà installé il va écraser la configuration par défaut, tapez simplement "yes" puis sur entrée :
+
+image::../images/install_other3.PNG[]
+
+Cet écran n'apparaît que si vous n'avez encore jamais installé mysql sur votre machine, donnez lui un mot de passe (attention c'est le mot de passe "root" de mysql il faut le retenir) :
+
+image::../images/install_other4.PNG[]
+
+Retaper le même mot de passe pour confirmer :
+
+image::../images/install_other5.PNG[]
+
+Ici redonner le mot de passe précédent, et confirmer (sur la capture le mot de passe est "jeedom") :
+
+image::../images/install_other6.PNG[]
+
+Voilà l'installation est finie, l'installateur vous donne l'url pour vous connecter à Jeedom (attention elle change en fonction des installations) et les identifiants par défaut (admin/admin)
+
+image::../images/install_other7.PNG[]
+
+=== Etape 4 : Définition des droits root à Jeedom
+
+Cette étape permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redémarrer, ou de gerer le réseaux par exemple.
+
+----
+sudo su -
+echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
+----
+
+Por lo demás se puede seguir la documentación https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]

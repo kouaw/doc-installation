@@ -1,0 +1,29 @@
+Wenn Sie möchten, können Sie auch entdecken Jeedom auf Ihrem Virtuellen Computer arbeitet, folgen sind die Schritte:
+
+=== Schritt 1 : Downloaden und installieren des VMware Player
+
+Vous devez télécharger le logicel VMware Player link:https://download3.vmware.com/software/player/file/VMware-player-12.0.0-2985596.exe[ici] puis l'installer sur votre pc
+
+=== Schritt 2: Laden Sie die Jeedom VM
+
+Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#x64#-X.xxx.rar ou jeedom-#x86#-X.xxx.rar
+
+=== Schritt 3: VM-Abbild Dekomprimieren
+
+Décompressez l'image de la VM Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar])
+
+=== Schritt 4 :  VM starten
+
+Gehen Sie auf das entpackte VM-Abbild und führen Sie die "Jeedom.vmx"  Datei aus : 
+
+image::../images/installation_vmware1.jpg[]
+
+Klicken Sie auf "Play Virtual Machine",  antworten auf alle Fragen mit Ja (wenn gefragt wird ob die Maschine verschoben oder kopiert werden soll, wählen sie verschieben), warten Sie bis die Maschine startet, sie sollten sehen : 
+
+image::../images/installation_vmware2.jpg[]
+
+[TIP]
+Les identifiants SSH sont jeedom/Mjeedom96 ou root/Mjeedom96
+L'utilisateur root ne peut étre utiliser à distance
+
+Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.

@@ -1,0 +1,76 @@
+Para descubrir Jeedom podrías también instalarlo en un contenedor Docker
+
+[IMPORTANTE]
+Requisitos: Tener una máquina o una VM (máquina virtual) con el sistema operativo Linux
+
+=== Etapa 1 : Instalación de docker
+
+Docker esta disponible con todas las distribuciones recientes. Para instalar lo sobre una distribución
+
+* a base de RPM 
+----
+$ yum install docker
+----
+
+* a base de deb
+----
+$ apt-get update
+$ apt-get install docker
+$ apt-get install docker.io
+----
+
+==== Paso 2 : Descarga de la imagen del contenedor jeedom
+
+Para utilizar jeedom, lo primero es descargar la imagen que sirve para lanzarlo en el contenedor
+
+----
+$ docker pull cquad/jeedom
+----
+
+Podemos después verificar que la imagen esta disponible:
+
+---- 
+$ docker images
+----
+
+En esta línea de comando debemos fijarnos en la que contiene cquad/jeedom.
+----
+REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
+cquad/jeedom latest 9a18afc80af8 3 months ago 580.7 MB
+----
+
+=== Paso 3 : Lanzamiento del contenedor
+
+Ahora vamos a lanzar el contenedor:
+
+----
+$ docker run --name jeedom -p 22 -p 80 -p 9001 cquad/jeedom
+----
+Este comando lanzará un contenedor llamado jeedom que se basa en la imagen cquad/jeedom 
+la opción -p permite de exponer un puerto del contenedor, en nuestro caso seria el puerto shh,jeedom y supervisor
+
+[IMPORTANTE]
+El servicio ssh, jeedom y supervisor no son accesibles en los puertos 22,80 y 9001. Están publicados en otros puertos.
+
+Para verificar que el contenedor funciona bien y encontrar los puertos para acceder a jeedom :
+
+----
+$ docker ps
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+0fc1a4f3f584 cquad/jeedom:latest "/usr/bin/supervisor About an hour ago Up About an hour 0.0.0.0:49153->22/tcp, 0.0.0.0:49154->80/tcp, 0.0.0.0:49155->9001/tcp jeedom
+----
+
+En este ejemplo jeedom es accesible a la siguiente dirección  http://ip_serveur:49154/
+
+[TIP]
+Si necesitas conectar un periférico a su contenedor, es necesario al lanzamiento del contenedor de anadir la opción -- device=chemin_host:chemin_conteneur. por ejemplo --device=/dev/ttyS0:/dev/ttyS0
+
+
+.Los identificadores SSH son
+--
+- Usuario : root
+- Contraseña : jeedom
+--
+
+
+Por lo demás se puede seguir la documentación https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]

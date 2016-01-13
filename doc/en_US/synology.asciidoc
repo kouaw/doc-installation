@@ -1,0 +1,69 @@
+Here is the step by step documentation to install Jeedom on Synology (DSM 5.2 minimum).
+
+=== Etape 1 : Installation of Docker
+
+Go to packages center : 
+
+image::../images/install_synology_1.PNG[]
+
+Click All, and then install the package Docker
+
+image::../images/install_synology_2.PNG[]
+
+Wait until the installation is finished : 
+
+image::../images/install_synology_3.PNG[]
+
+[IMPORTANT]
+To access the package Docker it is essential to have DSM 5.2 and a compatible NAS
+
+=== Etape 2 : Recovery and installation of Jeedom image 
+
+Start Docker app : 
+
+image::../images/install_synology_4.PNG[]
+
+Click "Register" : 
+
+image::../images/install_synology_5.PNG[]
+
+In the search field type "jeedom", select cquad/jeedom and click download : 
+
+image::../images/install_synology_6.PNG[]
+
+Then confirm the version of application (it is advisable to take the last) : 
+
+image::../images/install_synology_14.PNG[]
+
+Then click image here you can follow the progress of the download (can take several dozen minutes) : 
+
+image::../images/install_synology_7.PNG[]
+
+When completed click on the image and run : 
+
+image::../images/install_synology_8.PNG[]
+
+Give a name to your Jeedom and a local port redirected to port 80 of the container, then click Next:
+
+image::../images/install_synology_9.PNG[]
+
+Check "Enable limited resources" and select Medium, and then done next: 
+
+image::../images/install_synology_10.PNG[]
+
+Check "Run this container when the wizard is finished" then click "Apply" : 
+
+image::../images/install_synology_11.PNG[]
+
+You can see on the "Overview" Jeedom the container currently running : 
+
+image::../images/install_synology_12.PNG[]
+
+You just have to connect to your Jeedom with your IP address IP_NAS:2080, for example if your NAS IP address is 192.168.0.140, then type 192.168.0.140:2080 in your explorer address bar. Default identifiers are admin/admin: 
+
+image::../images/install_synology_13.PNG[]
+
+[TIP]
+Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
+
+For the rest you can follow the documentation https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Getting Started with Jeedom]

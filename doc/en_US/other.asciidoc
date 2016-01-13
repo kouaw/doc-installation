@@ -1,0 +1,59 @@
+Here is the step by step documentation to install Jeedom on most linux systems (based on debian)
+
+[IMPORTANT]
+Debian 8 or Ubuntu 15.04 recommended
+
+=== Etape 1 : Ssh connection
+
+First you must log in ssh on your linux. And update the following: 
+
+----
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install -y curl wget
+----
+
+=== Etape 2 : Launch the installation script
+
+Here are 3 commands to start installation of Jeedom : 
+
+----
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
+chmod +x install.sh
+./install.sh
+----
+
+=== Etape 3 : Installation
+
+Nothing special here simply answer questions. This step can take up to 30 min. Here are the details :
+
+The installer warns you if nginx is already installed it will overwrite the default configuration, simply type "yes" then input :
+
+image::../images/install_other3.PNG[]
+
+This screen appears only if you have never installed mysql on your machine, give it a password (beware it's the password "root" mysql we must remember it) :
+
+image::../images/install_other4.PNG[]
+
+Retype the same password to confirm :
+
+image::../images/install_other5.PNG[]
+
+Here restore the previous password, and confirm (on the capture the password is "jeedom"):
+
+image::../images/install_other6.PNG[]
+
+That installation is complete, the installer gives you the URL to connect to Jeedom (watch it changes according to the facilities) and the default password (admin/admin)
+
+image::../images/install_other7.PNG[]
+
+=== Etape 4 : Setting root access to Jeedom
+
+This step will allow Jeedom to have more rights and therefore to be able for example to switch off and restart, or manage the networks for example.
+
+----
+sudo su -
+echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
+----
+
+For the rest you can follow the documentation https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Getting Started with Jeedom]

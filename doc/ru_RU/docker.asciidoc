@@ -1,0 +1,76 @@
+Pour découvrir Jeedom vous pouvez aussi le faire tourner dans un conteneur Docker :
+
+[IMPORTANT]
+Pré-requis : Avoir une machine ou une VM tournant sous Linux
+
+=== Etape 1 : Installation de docker
+
+docker est maintenant disponible sur toutes les distributions récentes. Pour l'installer sur une distribution
+
+* à base de rpm 
+----
+$ yum install docker
+----
+
+* à base de deb
+----
+$ apt-get update
+$ apt-get install docker
+$ apt-get install docker.io
+----
+
+==== Etape 2 : Téléchargement de l'image du conteneur Jeedom
+
+Pour utiliser Jeedom, il faut dans un premier temps télécharger l'image qui va servir à lancer le conteneur.
+
+----
+$ docker pull cquad/jeedom
+----
+
+On peut ensuite vérifier que l'image est bien disponible :
+
+---- 
+$ docker images
+----
+
+Cette commande doit nous afficher une ligne contenant cquad/jeedom.
+----
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+cquad/jeedom        latest              9a18afc80af8        3 months ago        580.7 MB
+----
+
+=== Etape 3 : Lancement du conteneur
+
+Nous allons maintenant lancer le conteneur :
+
+----
+$ docker run --name jeedom -p 22 -p 80 -p 9001 cquad/jeedom
+----
+Cette commande va lancer un conteneur nommé jeedom qui se base sur l'image cquad/jeedom
+L'option -p permet d'exposer un port du conteneur, dans notre cas il s'agit du port pour ssh, jeedom et supervisor
+
+[IMPORTANT]
+le service ssh, jeedom et supervisor ne sont pas accessibles sur les port 22,80 et 9001. Ils sont publiés sur d'autres ports.
+
+Pour vérifier que le conteneur tourne bien et connaitre le port par lequel accéder à jeedom :
+
+----
+$ docker ps
+CONTAINER ID        IMAGE                 COMMAND                CREATED             STATUS              PORTS                                                                     NAMES
+0fc1a4f3f584        cquad/jeedom:latest   "/usr/bin/supervisor   About an hour ago   Up About an hour    0.0.0.0:49153->22/tcp, 0.0.0.0:49154->80/tcp, 0.0.0.0:49155->9001/tcp   jeedom
+----
+
+Dans cet exemple jeedom est accessible à l'adresse suivante http://ip_serveur:49154/
+
+[TIP]
+Si vous avez besoin de connecter un périphérique à votre conteneur, il est nécessaire au lancement du conteneur d'ajouter l'option --device=chemin_host:chemin_conteneur. par exemple --device=/dev/ttyS0:/dev/ttyS0
+
+
+.Les identifiants SSH sont
+--
+- Nom d'utilisateur : root
+- Mot de passe : jeedom
+--
+
+
+Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]

@@ -1,0 +1,69 @@
+Hier ist eine Schritt für Schritt Dokumentation um Jeedom auf eine Synology (DSM 5.2 minimum) zu installieren.
+
+=== Schritt 1 : Docker installieren 
+
+Gehe zum Paketzentrum : 
+
+image::../images/install_synology_1.PNG[]
+
+Klicken Sie auf Alle, und installieren Sie das Paket Docker
+
+image::../images/install_synology_2.PNG[]
+
+Warten Sie, bis die Installation abgeschlossen ist: 
+
+image::../images/install_synology_3.PNG[]
+
+[WICHTIG]
+Um auf das Docker Paket zuzugreifen ist es wichtig, DSM 5.2 und ein kompatibles NAS zu haben
+
+=== Schritt 2: Wiederherstellen und die Installation des Jeedom Abbilds
+
+Starten der Docker Anwendung : 
+
+image::../images/install_synology_4.PNG[]
+
+Klicken Sie auf "Anmelden" 
+
+image::../images/install_synology_5.PNG[]
+
+Im Suchfeld geben Sie "jeedom" ein, wählen Sie cquad/jeedom und klicken Sie auf Download: 
+
+image::../images/install_synology_6.PNG[]
+
+Bestätigen Sie dann die Version der Anwendung (ist es ratsam, die letzte zu übernehmen) : 
+
+image::../images/install_synology_14.PNG[]
+
+Klicken Sie dann auf das Bild, hier können Sie den Fortschritt des Downloads verfolgen (kann mehrere Dutzend Minuten dauern) 
+
+image::../images/install_synology_7.PNG[]
+
+Wenn Sie fertig sind, klicken Sie auf das Bild ausführen: 
+
+image::../images/install_synology_8.PNG[]
+
+Donnez un nom à votre Jeedom ainsi qu'un port local redirigé vers le port 80 du conteneur, puis faite suivant :
+
+image::../images/install_synology_9.PNG[]
+
+Aktivieren sie "Aktivieren Sie Ressourcenbeschränkungen" und wählen Sie Mittel klicke dann auf weiter: 
+
+image::../images/install_synology_10.PNG[]
+
+Abhaken "Diesen Container ausführen, wenn der Assistent beendet ist" und klicken Sie auf "Übernehmen": 
+
+image::../images/install_synology_11.PNG[]
+
+Sie können auf der  "Übersicht" sehen,dass der Jeedom Container arbeitet : 
+
+image::../images/install_synology_12.PNG[]
+
+Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2080, si par exemple votre NAS à l'ip 192.168.0.140 dans la barre d'adresse de votre navigateur faites : 192.168.0.140:2080. Les identifiants par défaut sont admin/admin : 
+
+image::../images/install_synology_13.PNG[]
+
+[TIP]
+Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
+
+Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
