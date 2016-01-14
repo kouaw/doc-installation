@@ -10,7 +10,7 @@ You must download software win32diskimager link:http://sourceforge.net/projects/
 
 === Step 2 : Recovery of Jeedom image 
 
-Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
+Go link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[there] and from the image folder download the file jeedom-#x64#-X.xxx.rar or jeedom-#x86#-X.xxx.ra
 
 image:../images/install_humming_1.PNG[]
 

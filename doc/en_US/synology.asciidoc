@@ -1,6 +1,6 @@
 Here is the step by step documentation to install Jeedom on Synology (DSM 5.2 minimum).
 
-=== Etape 1 : Installation of Docker
+=== Step 1 : Installation of Docker
 
 Go to packages center : 
 
@@ -17,7 +17,7 @@ image::../images/install_synology_3.PNG[]
 [IMPORTANT]
 To access the package Docker it is essential to have DSM 5.2 and a compatible NAS
 
-=== Etape 2 : Recovery and installation of Jeedom image 
+=== Step 2 : Recovery and installation of Jeedom image 
 
 Start Docker app : 
 
@@ -64,6 +64,6 @@ You just have to connect to your Jeedom with your IP address IP_NAS:2080, for ex
 image::../images/install_synology_13.PNG[]
 
 [TIP]
-Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
+If you want SSH access you need to forward a local port to port 22 of the container, SSH password are root/jeedom
 
 For the rest you can follow the documentation https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Getting Started with Jeedom]
