@@ -4,19 +4,19 @@ Here is the step by step documentation to install Jeedom on  Raspberry pi 1 or 2
 The name of the Jeedom image may be different from that of the catches made in this documentation
 
 
-=== Step 1 : Installing win32diskimager
+=== Step 1 : Installation of win32diskimager
 
 You must download software win32diskimager link:http://sourceforge.net/projects/win32diskimager/[here] then install it on your PC
 
 === Step 2 : Jeedom image recovery
 
-Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#rpi#-X.xxx.rar
+Go link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[there] and from the image folder download the file jeedom-#x64#-X.xxx.rar or jeedom-#x86#-X.xxx.rar
 
 image::../images/install_humming_1.PNG[]
 
 === Step 3 : Jeedom image decompression
 
-Décompression l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+Unpacking Jeedom image with your favorit tool (if you don't have any download and install e.g. link:http://www.win-rar.com/download.html[winrar]), you should get: 
 
 image::../images/install_humming_2.PNG[]
 

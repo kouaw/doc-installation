@@ -6,7 +6,7 @@ El nombre de la imagen Jeedom puede ser diferente de las fotos puestas en esta d
 
 === Paso 1 : Instalación de Win32diskimager
 
-Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/projects/win32diskimager/[ici] puis l'installer sur votre pc
+Debe descargar el software win32diskimage link:http://sourceforge.net/projects/win32diskimager/[ici] e instalarlo en su PC
 
 === Paso 2 : Recuperación de la imagen de Jeedom
 
