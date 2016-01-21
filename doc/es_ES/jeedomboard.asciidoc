@@ -1,4 +1,4 @@
-Encuentra ras aquí la documentación paso a paso para instalar Jeedom en las Jeedomboard (o Hummingboard).
+Encontrarás aquí la documentación paso a paso para instalar Jeedom en las Jeedomboard (o Hummingboard).
 
 [TIP]
 El nombre de la imagen Jeedom puede ser diferente de las fotos puestas en esta documentación
@@ -10,13 +10,13 @@ Debe descargar el software win32diskimage link:http://sourceforge.net/projects/w
 
 === Paso 2 : Recuperación de la imagen de Jeedom
 
-Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
+Vaya a link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici] y descarge la imagen jeedom-#jeeboard#-X.xxx.rar de la carpeta de imágenes
 
 imagen:../images/install_humming_1.PNG[]
 
 === Paso 3 : Descompresión de la imagen de jeedom
 
-Décompression de l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+Descomprima la imagen de Jeedom (si no dispone de un descompresor, puede instalar link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]) para obtener: 
 
 imagen::../images/install_humming_2.PNG[]
 
