@@ -43,7 +43,7 @@ Wenn Sie fertig sind, klicken Sie auf das Bild ausführen:
 
 image::../images/install_synology_8.PNG[]
 
-Donnez un nom à votre Jeedom ainsi qu'un port local redirigé vers le port 80 du conteneur, puis faite suivant :
+Geben Sie einen Namen für Ihre Jeedom und einen lokalen Port auf Port 80 des umgeleiteten Containers, dann weiter klicken :
 
 image::../images/install_synology_9.PNG[]
 
@@ -59,11 +59,11 @@ Sie können auf der  "Übersicht" sehen,dass der Jeedom Container arbeitet :
 
 image::../images/install_synology_12.PNG[]
 
-Il ne vous reste plus qu'a vous connecter à votre Jeedom en allant sur IP_NAS:2080, si par exemple votre NAS à l'ip 192.168.0.140 dans la barre d'adresse de votre navigateur faites : 192.168.0.140:2080. Les identifiants par défaut sont admin/admin : 
+Es bleibt nur noch sich mit Ihrem Jeedom zu verbinden, indem Sie auf IP_NAS:2080 gehen, wenn beispielsweise Ihr NAS die IP 192.168.0.140 hat, in der Adressleiste des Browsers 192.168.0.140:2080 eingeben. Die Zugangsdaten sind standardmäßig admin/admin : 
 
 image::../images/install_synology_13.PNG[]
 
 [TIP]
-Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom
+Wenn Sie SSH Zugang wollen, müssen den Port umleiten einen lokalen Port zu Port 22 vom Container sind SSH-Passwort root/jeedom
 
 Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
