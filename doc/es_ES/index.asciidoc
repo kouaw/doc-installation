@@ -12,7 +12,7 @@ include::rpi.asciidoc[]
 include::jeedomboard.asciidoc[]
 
 '''
-== Un nas Synology
+== En un NAS Synology
 include::synology.asciidoc[]
 
 '''
