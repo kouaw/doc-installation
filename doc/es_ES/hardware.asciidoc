@@ -33,7 +33,7 @@ Un total de 115€ para un completo dispositivo domótico de código abierto.
 Un total de 195€ para un completo dispositivo domótico de código abierto.
 
 [TIP]
-Il est possible de changer le Razberry par une clef USB Z-Wave (en revanche il faudra le plugin openzwave en plus sous Jeedom) ou si vous ne voulez pas de Z-Wave par un Rfxcom, ou une clef enOcean (ou même le piOcean)
+Puede reemplazar la Razberry por un dispositivo USB Z-Wave (aunque el plugin será openzwave) o si prefiere no usar Z-Wave, puede usar RFXCOM, o una llave EnOcean (o incluso piOcean )
 
 [TIP]
 Jeedom es un software que es, y seguirá siendo, de código abierto. Su uso es totalmente gratuito y no depende de la nube o suscripción alguna. Sin embargo, algunos plugins que aumentan la capacidad de Jeedom o su uso pueden ser de pago. Usted puede encontrar la lista de plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[aquí]

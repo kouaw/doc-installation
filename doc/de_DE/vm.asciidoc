@@ -2,15 +2,15 @@ Wenn Sie möchten, können Sie auch entdecken Jeedom auf Ihrem Virtuellen Comput
 
 === Schritt 1 : Downloaden und installieren des VMware Player
 
-Vous devez télécharger le logicel VMware Player link:https://download3.vmware.com/software/player/file/VMware-player-12.0.0-2985596.exe[ici] puis l'installer sur votre pc
+Sie müssen den VMware Player link:https://download3.vmware.com/software/player/file/VMware-player-12.0.0-2985596.exe[hier] herunterladen und installieren ihn auf Ihrem PC
 
 === Schritt 2: Laden Sie die Jeedom VM
 
-Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#x64#-X.xxx.rar ou jeedom-#x86#-X.xxx.rar
+Sie müssen link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[hier] hin gehen und dann im Images-Ordner das  jeedom-#x64#-X.xxx.rar oder jeedom-#x86#-X.xxx.rar Abbild abzurufen.
 
 === Schritt 3: VM-Abbild Dekomprimieren
 
-Décompressez l'image de la VM Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar])
+Dekomprimieren sie das  Jeedom-VM-Abbild ( falls Sie nichts zum dekomprimieren haben können Sie hier link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar] herunterladen)
 
 === Schritt 4 :  VM starten
 
@@ -23,7 +23,7 @@ Klicken Sie auf "Play Virtual Machine",  antworten auf alle Fragen mit Ja (wenn 
 image::../images/installation_vmware2.jpg[]
 
 [TIP]
-Les identifiants SSH sont jeedom/Mjeedom96 ou root/Mjeedom96
-L'utilisateur root ne peut étre utiliser à distance
+Die SSH Zugangsdaten sind jeedom/Mjeedom96 oder root/Mjeedom96
+Der Root-Benutzer kann nicht Remote-Benutzer sein  
 
 Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
