@@ -1,3 +1,6 @@
+[IMPORTANT]
+Attention nous partons ici du principe que vous maitrisez déjà docker
+
 To discover Jeedom you can also run in a Docker container :
 
 [IMPORTANT]
@@ -19,58 +22,49 @@ $ apt-get install docker
 $ apt-get install docker.io
 ----
 
-==== Step 2 : Download the image of the container Jeedom
+=== Etape 2 : Installation d'une image mysql
 
-To use Jeedom, we must firstly download the image that will be used to launch the container.
+[NOTE]
+Vous pouvez aussi installer mysql directement sur la machine hote dans ce cas il faut sauter cette étape.
 
-----
-$ docker pull cquad/jeedom
-----
-
-One can then check that the image is available :
-
----- 
-$ docker images
-----
-
-This command should display a line with us cquad/jeedom.
-----
-REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
-cquad/jeedom        latest              9a18afc80af8        3 months ago        580.7 MB
-----
-
-=== Step 3 : Launching the container
-
-We will now start the container :
+J'utilise link:https://hub.docker.com/_/mysql/[celle-ci]. Pour l'installer : 
 
 ----
-$ docker run --name jeedom -p 22 -p 80 -p 9001 cquad/jeedom
-----
-This command will launch a container named jeedom which is based on the image cquad/jeedom
-The -p option can expose a port of the container, in our case it is the port for ssh, and jeedom supervisor
-
-[IMPORTANT]
-the ssh service, jeedom and supervisor are not accessible on 22,80 port and 9001. They are published on other ports.
-
-To verify that the container is running well and know the port through which access jeedom :
-
-----
-$ docker ps
-CONTAINER ID        IMAGE                 COMMAND                CREATED             STATUS              PORTS                                                                     NAMES
-0fc1a4f3f584        cquad/jeedom:latest   "/usr/bin/supervisor   About an hour ago   Up About an hour    0.0.0.0:49153->22/tcp, 0.0.0.0:49154->80/tcp, 0.0.0.0:49155->9001/tcp   jeedom
+docker pull mysql:latest
 ----
 
-In this example jeedom is available at the following address 'http://ip_server:49154/
+Puis la lancer : 
+
+----
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
+----
 
 [TIP]
-If you need to connect a device to your container, it is necessary to launch the container to add the option --device=chemin_host:chemin_conteneur. for example --device=/dev/ttyS0:/dev/ttyS0
+N'oubliez pas de remplacer "my-secret-pw" par le mot de passe root mysql voulu et some-mysql par le nom du docker mysql voulu
 
+=== Etape 3 : Installation d'une image Jeedom
 
-SSH identifier are 
---
-- User : root
-- Password : jeedom
---
+Installation de l'image : 
 
+----
+docker pull jeedom/jeedom
+----
+
+Puis lancer la : 
+
+----
+docker run --name some-jeedom --privileged -v /dev/tty*:/dev -v /my/jeedom/data:/var/www/jeedom -e ROOT_PASSWORD=todo -p 9080:80 -p 9022:22 jeedom/jeedom
+----
+
+N'oubliez pas de changer la ligne de commande pour configurer : 
+
+- some-jeedom : nom du docker jeedom voulu
+- /my/jeedom/data : répertoire ou les données de Jeedom sont mise sur l'hôte
+- ROOT_PASSWORD : mot de passe root pour acceder à Jeedom en SSH
+- vous pouvez aussi changer la configuration des redirections de port
+
+Il vous faut ensuite installer Jeedom en allant sur : IP_DOCKER:9080 et entrer les informations de connexion vers mysql :
+
+image::../images/install_other.PNG[]
 
 For the rest you can follow the documentation https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Getting Started with Jeedom]

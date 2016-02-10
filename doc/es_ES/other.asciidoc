@@ -1,59 +1,96 @@
-Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (basé sur debian)
+Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (testée et approuvée sur la distribution Debian)
 
 [IMPORTANTE]
-Debian 8 ou Ubuntu 15.04 recommandé
+Debian 8 est la distribution officiellement supportée, l'utilisation d'une autre distribution est à proscrire au risque d'obtenir comme réponse du support de devoir restaurer votre Jeedom sur une image officielle.
+Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseillons de partir sur une image officielle (OVF) ou l'utilisation d'une mini ou center (disponible prochainement).
 
 === Etape 1 : Connexion en ssh
 
-Vous devez tout d'abord vous connecter en ssh sur votre linux. Et mettre à jour celui-ci : 
+Vous devez tout d'abord vous connecter en ssh (en root) sur votre linux. Et mettre à jour celui-ci : 
 
 ----
-sudo apt-get update
-sudo apt-get dist-upgrade
-sudo apt-get install -y curl wget
+apt-get update
+apt-get dist-upgrade
 ----
 
-=== Etape 2 : Lancement du script d'installation
+=== Etape 2 : Installation des dépendances
 
-Voici les 3 commandes pour lancer l'installation de Jeedom : 
+[IMPORTANTE]
+Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx Mysql Php) ou LAMP (Linux Apache Mysql Php). Si vous l'avez déjà installé passez directement à l'étape 3
 
-----
-wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
-chmod +x install.sh
-./install.sh
-----
-
-=== Etape 3 : Installation
-
-Rien de particulier ici il vous suffit de répondre aux questions. Cette étape peut prendre jusqu'à 30 min. Voici les détails :
-
-L'installateur vous prévient que si nginx est déjà installé il va écraser la configuration par défaut, tapez simplement "yes" puis sur entrée :
-
-image::../images/install_other3.PNG[]
-
-Cet écran n'apparaît que si vous n'avez encore jamais installé mysql sur votre machine, donnez lui un mot de passe (attention c'est le mot de passe "root" de mysql il faut le retenir) :
-
-image::../images/install_other4.PNG[]
-
-Retaper le même mot de passe pour confirmer :
-
-image::../images/install_other5.PNG[]
-
-Ici redonner le mot de passe précédent, et confirmer (sur la capture le mot de passe est "jeedom") :
-
-image::../images/install_other6.PNG[]
-
-Voilà l'installation est finie, l'installateur vous donne l'url pour vous connecter à Jeedom (attention elle change en fonction des installations) et les identifiants par défaut (admin/admin)
-
-image::../images/install_other7.PNG[]
-
-=== Etape 4 : Définition des droits root à Jeedom
-
-Cette étape permettra à Jeedom d'avoir plus de droits et donc de pouvoir par exemple s'éteindre et se redémarrer, ou de gerer le réseaux par exemple.
+==== APACHE
 
 ----
-sudo su -
+mkdir -p /var/www/html/log
+apt-get -y install ntp ca-certificates unzip curl sudo
+apt-get -y install apache2 php5 mysql-client mysql-server libapache2-mod-php5
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/apache_security -O /etc/apache2/conf-available/security.conf
+rm /etc/apache2/conf-enabled/security.conf
+ln -s /etc/apache2/conf-available/security.conf /etc/apache2/conf-enabled/
+systemctl restart apache2
+rm /var/www/html/index.html
+----
+
+==== NGINX
+
+----
+apt-get -y install mysql-client mysql-server
+apt-get -y install nginx-common nginx-full ntp ca-certificates unzip curl sudo
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
+----
+
+[IMPORTANTE]
+Retenez bien le mot de passe mysql que vous avez configuré
+
+Configuration de l'environement PHP (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
+
+----
+mkdir -p /var/www/html/log
+sed -i 's/max_execution_time = 30/max_execution_time = 600/g' /etc/php5/fpm/php.ini
+sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 1G/g' /etc/php5/fpm/php.ini
+sed -i 's/post_max_size = 8M/post_max_size = 1G/g' /etc/php5/fpm/php.ini
+sed -i 's/expose_php = On/expose_php = Off/g' /etc/php5/fpm/php.ini
+sed -i 's/pm.max_children = 5/pm.max_children = 20/g' /etc/php5/fpm/pool.d/www.conf
+rm /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/nginx_default -O /etc/nginx/sites-available/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+systemctl restart php5-fpm
+systemctl restart nginx
+----
+
+==== Création du cron
+
+----
+echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/html/core/php/jeeCron.php' >> /dev/null" | crontab -
+----
+
+==== Droit root à jeedom
+
+----
 echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 ----
+
+=== Etape 3 : Ajout des fichiers Jeedom
+
+Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
+
+----
+mkdir -p /var/www/html
+rm -rf /root/core-*
+wget https://github.com/jeedom/core/archive/stable.zip -O /tmp/jeedom.zip
+unzip -q /tmp/jeedom.zip -d /root/
+cp -R /root/core-*/* /var/www/html/
+cp -R /root/core-*/.htaccess /var/www/html/
+----
+
+=== Etape 4 : Installation
+
+Il vous suffit d'aller sur IP_MACHINE_JEEDOM
+
+image::../images/install_other.PNG[]
+
+Il faut ensuite remplir les champs en fonction de la ou vous voulez mettre votre base de données. Par defaut vous devez juste mettre le mot de passe tapé précedement puis valider.
 
 Por lo demás se puede seguir la documentación https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]

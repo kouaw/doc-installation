@@ -36,7 +36,7 @@ A total of € 195 for a box open source home automation with full control of hi
 You can change the Razberry by a Z-Wave USB stick (though it will openzwave the plugin and more under Jeedom) or if you do not want a Z-Wave, a RFXCOM, or EnOcean key (or even piOcean )
 
 [TIP]
-Jeedom is software that is and will remain open source, its use is completely free and does not depend on a cloud or a subscription. However some plugins that increase the capabilities of Jeedom or its use may be chargeable. You can find the list of plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[here]
+Jeedom est un logiciel qui est et restera opensource, son utilisation est entièrement gratuite et ne dépend pas d'un cloud ou d'un abonnement. Cependant certains plugins qui permettent d'augmenter les capacités de Jeedom ou son utilisation peuvent être payants *et peuvent avoir besoin d'une connexion internet*. Vous pouvez retrouver la liste des plugins link:http://market.jeedom.fr/index.php?v=d&p=market&type=plugin[ici]
 
 [TIP]
 Service pack? Quézako? You can see link:https://blog.jeedom.fr/?p=1215[here] the benefits of service packs

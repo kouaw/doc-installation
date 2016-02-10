@@ -17,53 +17,120 @@ image::../images/install_synology_3.PNG[]
 [IMPORTANT]
 To access the package Docker it is essential to have DSM 5.2 and a compatible NAS
 
-=== Step 2 : Recovery and installation of Jeedom image 
+=== Etape 2 : Recuperation et installation des images Jeedom
+
+Il faut docker pour faire tourner Jeedom, le premier un docker Mysql qui contiendra la base de données et un 2eme qui contient Jeedom
 
 Start Docker app : 
 
 image::../images/install_synology_4.PNG[]
 
+==== MYSQL
+
 Click "Register" : 
 
 image::../images/install_synology_5.PNG[]
 
-In the search field type "jeedom", select cquad/jeedom and click download : 
+Dans le champs de recherche tapez "mysql", selectionnez mysql et cliquez sur télécharger : 
 
-image::../images/install_synology_6.PNG[]
+image::../images/install_synology_15.PNG[]
 
-Then confirm the version of application (it is advisable to take the last) : 
+Validez ensuite la demande de version le mieux étant de prendre la dernière : 
 
 image::../images/install_synology_14.PNG[]
 
 Then click image here you can follow the progress of the download (can take several dozen minutes) : 
 
-image::../images/install_synology_7.PNG[]
+image::../images/install_synology_16.PNG[]
 
 When completed click on the image and run : 
 
-image::../images/install_synology_8.PNG[]
+image::../images/install_synology_17.PNG[]
 
-Give a name to your Jeedom and a local port redirected to port 80 of the container, then click Next:
+Donnez un nom à votre mysql ainsi qu'un port local redirigé vers le port 3306 du conteneur, puis faite suivant :
 
-image::../images/install_synology_9.PNG[]
+image::../images/install_synology_18.PNG[]
 
-Check "Enable limited resources" and select Medium, and then done next: 
+Faites suivant :
 
-image::../images/install_synology_10.PNG[]
+image::../images/install_synology_19.PNG[]
 
-Check "Run this container when the wizard is finished" then click "Apply" : 
+Cliquez sur "Paramètre avancés" :
 
-image::../images/install_synology_11.PNG[]
+image::../images/install_synology_32.PNG[]
 
-You can see on the "Overview" Jeedom the container currently running : 
+Cliquez sur "Environnement" puis "Ajoutez une variable" et mettant dans "Variable" : "MYSQL_ROOT_PASSWORD" et dans valeur mettez le mot de passe de BDD voulu (il servira plus tard). Puis validez : 
 
-image::../images/install_synology_12.PNG[]
+image::../images/install_synology_33.PNG[]
 
-You just have to connect to your Jeedom with your IP address IP_NAS:2080, for example if your NAS IP address is 192.168.0.140, then type 192.168.0.140:2080 in your explorer address bar. Default identifiers are admin/admin: 
+Cochez "Executer ce conteneur lorsque l'assistant a terminé" puis cliquez sur "Appliquer".
 
-image::../images/install_synology_13.PNG[]
+==== Jeedom
+
+Click "Register" : 
+
+image::../images/install_synology_5.PNG[]
+
+Dans le champs de recherche tapez "jeedom", selectionnez jeedom/jeedom et cliquez sur télécharger : 
+
+image::../images/install_synology_20.PNG[]
+
+Validez ensuite la demande de version le mieux étant de prendre la dernière : 
+
+image::../images/install_synology_14.PNG[]
+
+Then click image here you can follow the progress of the download (can take several dozen minutes) : 
+
+image::../images/install_synology_21.PNG[]
+
+When completed click on the image and run : 
+
+image::../images/install_synology_22.PNG[]
+
+Donnez un nom à votre jeedom ainsi qu'un port local redirigé vers le port 80 (ici 9080) et un vers le 22 (ici 9022) du conteneur, puis faite suivant :
+
+image::../images/install_synology_23.PNG[]
+
+Faites suivant :
+
+image::../images/install_synology_24.PNG[]
+
+Cliquez sur "Paramètre avancés"
+
+image::../images/install_synology_25.PNG[]
+
+Puis sur "Ajouter un dossier"
+
+image::../images/install_synology_26.PNG[]
+
+Choisissez un dossier sur votre Synology (c'est dans ce dossier qu'il y aura tous les fichiers jeedom)
+
+image::../images/install_synology_27.PNG[]
+
+Dans chemin d'accès mettez /var/www/jeedom puis cliquez sur "Environnement" :
+
+image::../images/install_synology_28.PNG[]
+
+Cochez "Executer le conteneur à l'aide de privilège élevés" puis validez le tout :
+
+image::../images/install_synology_29.PNG[]
+
+Cochez "Executer ce conteneur lorsque l'assistant a terminé" puis cliquez sur "Appliquer".
+
+=== Etape 3 : Configuration de Jeedom
+
+Il vous faut maintenant installer Jeedom, c'est très simple allez sur IP_NAS:9080
+
+image::../images/install_synology_31.PNG[]
+
+Remplissez les champs en fonction de votre configuration (configuration du docker mysql installé précedement) et validez.
+
+[IMPORTANT]
+L'addresse IP de la BDD est l'addresse IP du NAS, le port est celui redirigé du docker Mysql, le mot de passe est celui mis dans le docker mysql. Le nom d'utilisateur est root et le nom de la base celui que vous voulez (conseillé Jeedom)
+
+image::../images/install_synology_30.PNG[]
 
 [TIP]
-If you want SSH access you need to forward a local port to port 22 of the container, SSH password are root/jeedom
+Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom. Vous pouvez changer le mot de passe en initialisant la variable d'environement ROOT_PASSWORD à la valeur du mot de passe voulu.
 
 For the rest you can follow the documentation https://www.jeedom.fr/doc/documentation/premiers-pas/en_US/doc-premiers-pas.html[Getting Started with Jeedom]
