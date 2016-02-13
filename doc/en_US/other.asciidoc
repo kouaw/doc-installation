@@ -6,7 +6,7 @@ Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseill
 
 === Etape 1 : Ssh connection
 
-Vous devez tout d'abord vous connecter en ssh (en root) sur votre linux. Et mettre à jour celui-ci : 
+Vous devez tout d'abord vous connecter en ssh en root (soit en se connectant directement en root soit en faisant "sudo su -") sur votre linux. Et mettre à jour celui-ci : 
 
 ----
 apt-get update
