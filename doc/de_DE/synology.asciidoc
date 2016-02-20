@@ -75,9 +75,7 @@ Dans le champs de recherche tapez "jeedom", selectionnez jeedom/jeedom et clique
 
 image::../images/install_synology_20.PNG[]
 
-Validez ensuite la demande de version le mieux étant de prendre la dernière : 
-
-image::../images/install_synology_14.PNG[]
+Validez ensuite la demande de version le mieux étant de prendre la dernière.
 
 Klicken Sie dann auf das Bild, hier können Sie den Fortschritt des Downloads verfolgen (kann mehrere Dutzend Minuten dauern) 
 
