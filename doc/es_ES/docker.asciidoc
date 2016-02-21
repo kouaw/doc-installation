@@ -30,13 +30,13 @@ Vous pouvez aussi installer mysql directement sur la machine hote dans ce cas il
 J'utilise link:https://hub.docker.com/_/mysql/[celle-ci]. Pour l'installer : 
 
 ----
-docker pull mysql:5.6
+docker pull mysql:latest
 ----
 
 Puis la lancer : 
 
 ----
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
+docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
 ----
 
 [TIP]
@@ -53,7 +53,7 @@ docker pull jeedom/jeedom
 Puis lancer la : 
 
 ----
-docker run --name some-jeedom --privileged -v /dev/tty*:/dev -v /my/jeedom/data:/var/www/jeedom -e ROOT_PASSWORD=todo -p 9080:80 -p 9022:22 jeedom/jeedom
+docker run --name some-jeedom --privileged -v /dev/tty*:/dev -v /my/jeedom/data:/var/www/html -e ROOT_PASSWORD=todo -p 9080:80 -p 9022:22 jeedom/jeedom
 ----
 
 N'oubliez pas de changer la ligne de commande pour configurer : 

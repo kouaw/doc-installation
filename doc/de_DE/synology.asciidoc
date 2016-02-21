@@ -57,6 +57,10 @@ image::../images/install_synology_19.PNG[]
 
 Cliquez sur "Paramètre avancés" :
 
+image::../images/install_synology_34.PNG[]
+
+Puis sur "Ajouter un dossier", et la mettez le dossier voulu coté synology (c'est dans ce dossier qu'il y aura tous les fichiers de la base de données) et /var/lib/mysql coté conteneur (attention à bien decocher "Lecture seule")
+
 image::../images/install_synology_32.PNG[]
 
 Cliquez sur "Environnement" puis "Ajoutez une variable" et mettant dans "Variable" : "MYSQL_ROOT_PASSWORD" et dans valeur mettez le mot de passe de BDD voulu (il servira plus tard). Puis validez : 
@@ -101,7 +105,7 @@ Puis sur "Ajouter un dossier"
 
 image::../images/install_synology_26.PNG[]
 
-Choisissez un dossier sur votre Synology (c'est dans ce dossier qu'il y aura tous les fichiers jeedom)
+Choisissez un dossier sur votre Synology (c'est dans ce dossier qu'il y aura tous les fichiers jeedom), attention à bien decocher "Lecture seule"
 
 image::../images/install_synology_27.PNG[]
 
