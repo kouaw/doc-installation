@@ -10,7 +10,7 @@ Sie müssen den Win32diskimager link:http://sourceforge.net/projects/win32diskim
 
 === Schritt 2: Wiederherstellung Jeedom-Abbild
 
-Sie müssen link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[hier] hin gehen und dann im Images-Ordner das jeedom-#jeeboard#-X.xxx.rar Abbild abzurufen.
+Vous devez aller link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
 
 image::../images/install_humming_1.PNG[]
 
