@@ -10,7 +10,7 @@ Vous devez télécharger le logicel win32diskimager link:http://sourceforge.net/
 
 === Etape 2 : Récupération de l'image de Jeedom
 
-Vous devez aller link:https://drive.google.com/open?id=0B9gdDNCtvjAIMmFYTEtISHRxU2s[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
+Vous devez aller link:https://drive.google.com/folderview?id=0BzBLctEj8LQpekdBZkhzV3dkaGs&usp=sharing[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
 
 image::../images/install_humming_1.PNG[]
 
