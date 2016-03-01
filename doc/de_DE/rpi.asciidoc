@@ -10,7 +10,7 @@ Sie müssen den Win32diskimager link:http://sourceforge.net/projects/win32diskim
 
 === Schritt 2: Wiederherstellung Jeedom-Abbild
 
-Vous devez aller link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], puis dans le dossier Images récuperer l'image jeedom-#rpi#-X.xxx.rar
+Sie müssen link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[hier] hin gehen, und dann im Images-Ordner das jeedom-#rpi#-X.xxx.rar Abbild abrufen.
 
 image::../images/install_humming_1.PNG[]
 
@@ -49,10 +49,10 @@ Sie müssen nur die SD-Karte in den Raspberry-Pi stecken, sobald sie das Board m
 [TIP]
  Die SSH Zugangsdaten jeedom/Mjeedom96
 
-[WICHTIG]
+[IMPORTANT]
 Achtung, falls Sie eine SD-Karte mit mehr als 4 gb haben, vergessen nicht die Partition mit dem Befehl raspi-config in ssh zu erweitern! 
 
-[WICHTIG]
+[IMPORTANT]
 Wenn Sie einen rpi2 haben, VOR ALLEM NICHT ÜBERTACKTEN, das könnte ein instabiles System zur folge haben mit zahlreicher Beschädigung der SD Karte
 
-Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
+Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/de_DE/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
