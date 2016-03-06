@@ -35,7 +35,7 @@ Dans le champs de recherche tapez "mysql", selectionnez mysql et cliquez sur té
 
 image::../images/install_synology_15.PNG[]
 
-Validez ensuite la demande de version le mieux étant de prendre la version 5.6 : 
+Validez ensuite la demande de version le mieux étant de prendre la version latest : 
 
 image::../images/install_synology_14.PNG[]
 
