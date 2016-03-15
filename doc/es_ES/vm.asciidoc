@@ -1,4 +1,4 @@
-Si vous voulez découvrir Jeedom vous pouvez aussi le virtualiser sur votre poste, voici la démarche à suivre :
+Si quieres descubrir Jeedom también se puede virtualizar, aquí están los pasos a seguir:
 
 === Etape 1 : Téléchargement et installation de VMware Player
 

@@ -6,7 +6,7 @@ Download VMware Player link:https://download3.vmware.com/software/player/file/VM
 
 === Step 2 : Download VM Jeedom
 
-Vous devez aller link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], puis dans le dossier Images récuperer l'image jeedom-#x64#-X.xxx.rar ou jeedom-#x86#-X.xxx.rar
+You have to click  link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[here], then in drive "Images" take the Jeedom's image jeedom-#x64#-X.xxx.rar or jeedom-#x86#-X.xxx.rar
 
 === Step 3 : Decompress the VM image
 
