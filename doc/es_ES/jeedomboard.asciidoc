@@ -10,13 +10,13 @@ Debe descargar el software win32diskimage link:http://sourceforge.net/projects/w
 
 === Paso 2 : Recuperación de la imagen de Jeedom
 
-Vous devez aller link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], puis dans le dossier Images récuperer l'image jeedom-#jeeboard#-X.xxx.rar
+Tienes que ir a link: https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent [aquí], luego la carpeta de imágenes de recuperar la imagen jeedom-#jeeboard #-X.xxx.rar
 
 image::../images/install_humming_1.PNG[]
 
 === Paso 3 : Descompresión de la imagen de jeedom
 
-Décompresser l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+Descomprimir la imagen de Jeedom (si no tienes con que descomprimir puede instalar winrar desde el link: http://www.clubic.com/telecharger-fiche9632-winrar.html [winrar]), usted obtendrá: 
 
 imagen::../images/install_humming_2.PNG[]
 
