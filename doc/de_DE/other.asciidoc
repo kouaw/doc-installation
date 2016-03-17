@@ -72,7 +72,7 @@ echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/html/c
 echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 ----
 
-=== Etape 3 : Ajout des fichiers Jeedom
+=== Etape 3 : Jeedom Dateien hinzufügen
 
 Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
 
@@ -85,9 +85,9 @@ cp -R /root/core-*/* /var/www/html/
 cp -R /root/core-*/.htaccess /var/www/html/
 ----
 
-=== Etape 4 : Installation
+=== Schritt 4 : Installation
 
-Il vous suffit d'aller sur IP_MACHINE_JEEDOM
+Gehen Sie einfach auf IP_MACHINE_JEEDOM
 
 image::../images/install_other.PNG[]
 
