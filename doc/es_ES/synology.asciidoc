@@ -17,7 +17,7 @@ image::../images/install_synology_3.PNG[]
 [IMPORTANTE]
 Para acceder al paquete Docker, es esencial contar con DSM 5.2 y un NAS compatible
 
-=== Etape 2 : Recuperation et installation des images Jeedom
+Paso 2: Recuperación e instalación imágenes de Jeedom
 
 Il faut docker pour faire tourner Jeedom, le premier un docker Mysql qui contiendra la base de données et un 2eme qui contient Jeedom
 
@@ -31,7 +31,7 @@ Haga clic en "Registrarse":
 
 image::../images/install_synology_5.PNG[]
 
-Dans le champs de recherche tapez "mysql", selectionnez mysql et cliquez sur télécharger : 
+En el campo de búsqueda teclear "mysql", seleccionar mysql y haga clic sobre descarga: 
 
 image::../images/install_synology_15.PNG[]
 
@@ -47,7 +47,7 @@ Cuando se haya completado, haga clic en la imagen y ejecútelo:
 
 image::../images/install_synology_17.PNG[]
 
-Donnez un nom à votre mysql ainsi qu'un port local redirigé vers le port 3306 du conteneur, puis faite suivant :
+Introduzca un nombre para su mysql, un puerto local redirigido al puerto 3306 del contenedor, y luego haga siguiente:
 
 image::../images/install_synology_18.PNG[]
 
@@ -55,7 +55,7 @@ Faites suivant :
 
 image::../images/install_synology_19.PNG[]
 
-Cliquez sur "Paramètre avancés" :
+Haga clic en "Parámetros azanzados"
 
 image::../images/install_synology_34.PNG[]
 
@@ -75,7 +75,7 @@ Haga clic en "Registrarse":
 
 image::../images/install_synology_5.PNG[]
 
-Dans le champs de recherche tapez "jeedom", selectionnez jeedom/jeedom et cliquez sur télécharger : 
+En el campo de búsqueda "jeedom", seleccione jeedom/jeedom y haga clic en descarga: 
 
 image::../images/install_synology_20.PNG[]
 
@@ -97,7 +97,7 @@ Faites suivant :
 
 image::../images/install_synology_24.PNG[]
 
-Cliquez sur "Paramètre avancés"
+Haga clic en "Parámetros azanzados"
 
 image::../images/install_synology_25.PNG[]
 

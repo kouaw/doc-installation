@@ -101,7 +101,7 @@ Cliquez sur "Paramètre avancés"
 
 image::../images/install_synology_25.PNG[]
 
-Puis sur "Ajouter un dossier"
+Then on "Add a file"
 
 image::../images/install_synology_26.PNG[]
 

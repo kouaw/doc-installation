@@ -74,7 +74,7 @@ echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 
 === Etape 3 : Ajout des fichiers Jeedom
 
-Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
+You need to add the Jeedom files in the webserver register (by default /var/www) : 
 
 ----
 mkdir -p /var/www/html
