@@ -1,4 +1,4 @@
-Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (testée et approuvée sur la distribution Debian)
+Hier finden Sie die Dokumentation um Jeedom auf den meisten Linux-Systemen zu installieren (auf der Debian Distribution geprüfte und zugelassen)
 
 [IMPORTANT]
 Debian 8 est la distribution officiellement supportée, l'utilisation d'une autre distribution est à proscrire au risque d'obtenir comme réponse du support de devoir restaurer votre Jeedom sur une image officielle.
@@ -6,17 +6,17 @@ Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseill
 
 === Schritt 1 : SSH-Verbindung
 
-Vous devez tout d'abord vous connecter en ssh en root (soit en se connectant directement en root soit en faisant "sudo su -") sur votre linux. Et mettre à jour celui-ci : 
+Zuerst müssen sie sich als root in SSH auf Ihrem Linux anmelden (entweder indem man sich direkt in root verbindet, oder indem man "sudo su -" eingiebt). Und so aktualisieren sie diesen. : 
 
 ----
 apt-get update
 apt-get dist-upgrade
 ----
 
-=== Etape 2 : Installation des dépendances
+=== Schritt 2 : Abhängigkeiten installieren
 
 [IMPORTANT]
-Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx Mysql Php) ou LAMP (Linux Apache Mysql Php). Si vous l'avez déjà installé passez directement à l'étape 3
+Die folgenden Schritte beschreiben, wie sie einen LNMP (Linux Nginx Mysql Php) oder LAMP (Linux Apache Mysql Php) Server installieren. Wenn sie ihn bereits installiert haben, gehen sie direkt zu Schritt 3 über.
 
 ==== APACHE
 
@@ -41,9 +41,9 @@ apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql 
 ----
 
 [IMPORTANT]
-Retenez bien le mot de passe mysql que vous avez configuré
+Merken sie sich das konfigurierte Mysql-Passwort.
 
-Configuration de l'environement PHP (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
+Konfigurieren der PHP-Umgebung (Achtung, diese Befehle  sind für PHP5 und PHP7 anzupassen) : 
 
 ----
 mkdir -p /var/www/html/log
@@ -60,13 +60,13 @@ systemctl restart php5-fpm
 systemctl restart nginx
 ----
 
-==== Création du cron
+==== Cron erstellen
 
 ----
 echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/html/core/php/jeeCron.php' >> /dev/null" | crontab -
 ----
 
-==== Droit root à jeedom
+==== Jeedom root Rechte
 
 ----
 echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
@@ -74,7 +74,7 @@ echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
 
 === Etape 3 : Jeedom Dateien hinzufügen
 
-Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
+Hier müssen wir jeedom Dateien im Webserver-Verzeichnis hinzufügen (standardmäßig 
 
 ----
 mkdir -p /var/www/html
@@ -91,6 +91,6 @@ Gehen Sie einfach auf IP_MACHINE_JEEDOM
 
 image::../images/install_other.PNG[]
 
-Il faut ensuite remplir les champs en fonction de la ou vous voulez mettre votre base de données. Par defaut vous devez juste mettre le mot de passe tapé précedement puis valider.
+Sie müssen dann die Felder ausfüllen, je nachdem, wo sie möchten, dass Ihre Datenbank arbeitet. Standardmäßig sollten sie nur das Passwort benutzen was sie zuvor eingegeben haben und bestätigen.
 
 Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
