@@ -1,4 +1,4 @@
-Vous trouverez ici la documentation pour installer Jeedom sur la plupart des systèmes linux (testée et approuvée sur la distribution Debian)
+You will find here the documentation to install Jeedom on most linux systems (tested and approved on the Debian distribution)
 
 [IMPORTANT]
 Debian 8 est la distribution officiellement supportée, l'utilisation d'une autre distribution est à proscrire au risque d'obtenir comme réponse du support de devoir restaurer votre Jeedom sur une image officielle.

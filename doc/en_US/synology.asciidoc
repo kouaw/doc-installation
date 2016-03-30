@@ -55,7 +55,7 @@ Faites suivant :
 
 image::../images/install_synology_19.PNG[]
 
-Cliquez sur "Paramètre avancés" :
+Click on "Advanced settings" :
 
 image::../images/install_synology_34.PNG[]
 

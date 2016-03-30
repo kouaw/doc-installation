@@ -1,5 +1,5 @@
 [IMPORTANT]
-Attention nous partons ici du principe que vous maitrisez déjà docker
+Be careful, we are implying that you are already managing the docker
 
 To discover Jeedom you can also run in a Docker container :
 
