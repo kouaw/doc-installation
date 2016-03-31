@@ -85,9 +85,9 @@ cp -R /root/core-*/* /var/www/html/
 cp -R /root/core-*/.htaccess /var/www/html/
 ----
 
-=== Etape 4 : Installation
+=== Step 4 : Installation
 
-Il vous suffit d'aller sur IP_MACHINE_JEEDOM
+You just have to go to IP_MACHINE_JEEDOM
 
 image::../images/install_other.PNG[]
 

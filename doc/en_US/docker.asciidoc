@@ -27,7 +27,7 @@ $ apt-get install docker.io
 [NOTE]
 Vous pouvez aussi installer mysql directement sur la machine hote dans ce cas il faut sauter cette étape.
 
-J'utilise link:https://hub.docker.com/_/mysql/[celle-ci]. Pour l'installer : 
+I use link:https://hub.docker.com/_/mysql/[celle-ci]. To install : 
 
 ----
 docker pull mysql:latest
