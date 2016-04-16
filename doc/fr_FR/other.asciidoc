@@ -16,7 +16,7 @@ apt-get dist-upgrade
 === Etape 2 : Installation des dépendances
 
 [IMPORTANT]
-Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx Mysql Php) ou LAMP (Linux Apache Mysql Php). Si vous l'avez déjà installé passez directement à l'étape 3
+Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx Mysql Php) OU LAMP (Linux Apache Mysql Php). Si vous l'avez déjà installé passez directement à l'étape 3
 
 ==== APACHE
 
@@ -24,7 +24,7 @@ Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx 
 mkdir -p /var/www/html/log
 apt-get -y install ntp ca-certificates unzip curl sudo
 apt-get -y install apache2 php5 mysql-client mysql-server libapache2-mod-php5
-apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd php5-ssh2
 wget https://raw.githubusercontent.com/jeedom/core/stable/install/apache_security -O /etc/apache2/conf-available/security.conf
 rm /etc/apache2/conf-enabled/security.conf
 ln -s /etc/apache2/conf-available/security.conf /etc/apache2/conf-enabled/
@@ -33,19 +33,20 @@ rm /etc/apache2/conf-enabled/other-vhosts-access-log.conf
 systemctl restart apache2
 rm /var/www/html/index.html
 ----
+[IMPORTANT]
+Retenez bien le mot de passe mysql que vous avez configuré
+
+https://www.jeedom.com/doc/documentation/installation/fr_FR/doc-installation.html#_création_du_cron[Vous pouvez passe à l'étape 7.2.3.]
 
 ==== NGINX
 
 ----
-apt-get -y install mysql-client mysql-server
 apt-get -y install nginx-common nginx-full ntp ca-certificates unzip curl sudo
-apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd
+apt-get -y install mysql-client mysql-server
+apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd php5-ssh2
 ----
 
-[IMPORTANT]
-Retenez bien le mot de passe mysql que vous avez configuré
-
-Configuration de l'environement PHP (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
+Configuration de l'environement PHP pour Nginx (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
 
 ----
 mkdir -p /var/www/html/log
@@ -61,6 +62,9 @@ ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 systemctl restart php5-fpm
 systemctl restart nginx
 ----
+[IMPORTANT]
+Retenez bien le mot de passe mysql que vous avez configuré
+
 
 ==== Création du cron
 
