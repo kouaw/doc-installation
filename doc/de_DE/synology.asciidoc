@@ -89,7 +89,7 @@ Wenn Sie fertig sind, klicken Sie auf das Bild ausführen:
 
 image::../images/install_synology_22.PNG[]
 
-Donnez un nom à votre jeedom ainsi qu'un port local redirigé vers le port 80 (ici 9080) et un vers le 22 (ici 9022) du conteneur, puis faite suivant :
+Geben Sie einen Namen für Ihre Jeedom und einen lokalen Port auf Port 80 (hier 9080 und einen auf 22 (hier 9022) des Containers, dann weiter klicken :
 
 image::../images/install_synology_23.PNG[]
 
@@ -97,11 +97,11 @@ Dann  weiter :
 
 image::../images/install_synology_24.PNG[]
 
-Cliquez sur "Paramètre avancés"
+Klicken Sie auf "erweiterte Einstellungen"
 
 image::../images/install_synology_25.PNG[]
 
-Puis sur "Ajouter un dossier"
+Klicken Sie "Ordner hinzufügen"
 
 image::../images/install_synology_26.PNG[]
 
@@ -113,7 +113,7 @@ Dann gehen sie zum Pfad /var/www/jeedom und klicken auf "Umgebung" :
 
 image::../images/install_synology_28.PNG[]
 
-Cochez "Executer le conteneur à l'aide de privilège élevés" puis validez le tout :
+Kreuzen Sie "Den Behälter mittels hohen Privilegien ausführen" an und bestätigen Sie alles :
 
 image::../images/install_synology_29.PNG[]
 
@@ -125,7 +125,7 @@ Il vous faut maintenant installer Jeedom, c'est très simple allez sur IP_NAS:90
 
 image::../images/install_synology_31.PNG[]
 
-Remplissez les champs en fonction de votre configuration (configuration du docker mysql installé précedement) et validez.
+Füllen Sie die Felder entsprechend Ihrer Konfiguration (Docker konfigurieren, mysql muß zuvor installiert sein) aus und bestätigen sie.
 
 [WICHTIG]
 L'addresse IP de la BDD est l'addresse IP du NAS, le port est celui redirigé du docker Mysql, le mot de passe est celui mis dans le docker mysql. Le nom d'utilisateur est root et le nom de la base celui que vous voulez (conseillé Jeedom)
@@ -133,6 +133,6 @@ L'addresse IP de la BDD est l'addresse IP du NAS, le port est celui redirigé du
 image::../images/install_synology_30.PNG[]
 
 [TIP]
-Si vous voulez un accès SSH il vous faut dans les ports rediriger un port local vers le port 22 du contenaire, les identifiants SSH sont root/jeedom. Vous pouvez changer le mot de passe en initialisant la variable d'environement ROOT_PASSWORD à la valeur du mot de passe voulu.
+Wenn Sie SSH Zugang haben wollen, müssen Sie den Port umleiten, den lokalen Port zu Port 22 des Containers,  die SSH-Anmeldeinformationen sind root/jeedom. Sie können das Passwort ändern, indem Sie die Umgebungsvariable ROOT_PASSWORD auf den Wert das gewünschte Passwort initialisieren.
 
 Im übrigen können Sie die Dokumentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Erste Schritte mit Jeedom]  folgen.
