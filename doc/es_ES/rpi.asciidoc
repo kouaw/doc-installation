@@ -11,9 +11,9 @@ Debe descargar el software win32diskimage link:http://sourceforge.net/projects/w
 === Paso 2: Descarga de la imagen de Jeedom
 
 [IMPORTANTE]
-Suite à des dysfonctionnements l'image pour Pi a été temporairement retiré, une nouvelle image est en cours de réalisation , en attendant pour installer Jeedom sur Pi veuillez suivre la procédure d'installation classique (manuel)
+A raíz de fallos de funcionamiento, la imagen de Pi fue temporalmente retirada, una nueva imagen está en curso realizarse, para instalar Jeedom en Pi siga el procedimiento de instalación típica (manual)
 
-Vous devez aller link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], puis dans le dossier Images récuperer l'image jeedom-#rpi#-X.xxx.rar
+Tienes que ir a link:https://app.box.com/s/ijyxkntjjip9x4oue2xqdi53r4sh8ent[ici], luego  a la carpeta de imágenes y recuperar la imagen jeedom-#rpi #-X.xxx.rar
 
 image::../images/install_humming_1.PNG[]
 
