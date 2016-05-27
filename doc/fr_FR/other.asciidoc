@@ -58,6 +58,8 @@ rm /etc/nginx/sites-available/default
 rm /etc/nginx/sites-enabled/default
 wget https://raw.githubusercontent.com/jeedom/core/stable/install/nginx_default -O /etc/nginx/sites-available/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+touch /etc/nginx/sites-available/jeedom_dynamic_rule
+ln -s /etc/nginx/sites-available/jeedom_dynamic_rule /etc/nginx/sites-enabled/jeedom_dynamic_rule
 systemctl restart php5-fpm
 systemctl restart nginx
 ----
