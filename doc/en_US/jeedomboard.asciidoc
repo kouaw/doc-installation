@@ -16,7 +16,7 @@ image::../images/install_humming_1.PNG[]
 
 === Step 3 : Decompression image Jeedom
 
-Décompresser l'image de Jeedom (si vous n'avez rien pour le décompresser vous pouvez installer link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), vous devez obtenir : 
+Unpack Jeedom image (if necessary you can donwload and install link:http://www.clubic.com/telecharger-fiche9632-winrar.html[winrar]), you should get this : 
 
 image::../images/install_humming_2.PNG[]
 
