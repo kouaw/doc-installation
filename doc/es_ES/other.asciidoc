@@ -4,96 +4,17 @@ Vous trouverez ici la documentation pour installer Jeedom sur la plupart des sys
 Debian 8 est la distribution officiellement supportée, l'utilisation d'une autre distribution est à proscrire au risque d'obtenir comme réponse du support de devoir restaurer votre Jeedom sur une image officielle.
 Si vous ne maitriser pas un minimum les environnements Linux, nous vous conseillons de partir sur une image officielle (OVF) ou l'utilisation d'une mini ou center (disponible prochainement).
 
-=== Etape 1 : Connexion en ssh
-
-Vous devez tout d'abord vous connecter en ssh en root (soit en se connectant directement en root soit en faisant "sudo su -") sur votre linux. Et mettre à jour celui-ci : 
+Connectez vous en SSH à votre système et faites : 
 
 ----
-apt-get update
-apt-get dist-upgrade
+wget https://raw.githubusercontent.com/jeedom/core/stable/install/install.sh
+chmod +x install.sh
+./install.sh
 ----
 
-=== Etape 2 : Installation des dépendances
+Il vous suffit ensuite d'aller sur IP_MACHINE_JEEDOM
 
-[IMPORTANTE]
-Les étapes suivantes décrivent comment installer un serveur LNMP (Linux Nginx Mysql Php) ou LAMP (Linux Apache Mysql Php). Si vous l'avez déjà installé passez directement à l'étape 3
-
-==== APACHE
-
-----
-mkdir -p /var/www/html/log
-apt-get -y install ntp ca-certificates unzip curl sudo
-apt-get -y install apache2 php5 mysql-client mysql-server libapache2-mod-php5 apache2-mpm-prefork
-apt-get -y install php5-cli php5-common php5-curl php5-json php5-mysql php5-gd php5-ssh2
-wget https://raw.githubusercontent.com/jeedom/core/stable/install/apache_security -O /etc/apache2/conf-available/security.conf
-rm /etc/apache2/conf-enabled/security.conf
-ln -s /etc/apache2/conf-available/security.conf /etc/apache2/conf-enabled/
-rm /etc/apache2/conf-available/other-vhosts-access-log.conf 
-rm /etc/apache2/conf-enabled/other-vhosts-access-log.conf
-systemctl restart apache2
-rm /var/www/html/index.html
-----
-
-==== NGINX
-
-----
-apt-get -y install mysql-client mysql-server
-apt-get -y install nginx-common nginx-full ntp ca-certificates unzip curl sudo
-apt-get -y install php5-cli php5-common php5-curl php5-fpm php5-json php5-mysql php5-gd php5-ssh2
-----
-
-[IMPORTANTE]
-Retenez bien le mot de passe mysql que vous avez configuré
-
-Configuration de l'environement PHP (attention ceci est pour PHP5 pour PHP7 les commandes sont à adapter) : 
-
-----
-mkdir -p /var/www/html/log
-sed -i 's/max_execution_time = 30/max_execution_time = 600/g' /etc/php5/fpm/php.ini
-sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 1G/g' /etc/php5/fpm/php.ini
-sed -i 's/post_max_size = 8M/post_max_size = 1G/g' /etc/php5/fpm/php.ini
-sed -i 's/expose_php = On/expose_php = Off/g' /etc/php5/fpm/php.ini
-rm /etc/nginx/sites-available/default
-rm /etc/nginx/sites-enabled/default
-wget https://raw.githubusercontent.com/jeedom/core/stable/install/nginx_default -O /etc/nginx/sites-available/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-touch /etc/nginx/sites-available/jeedom_dynamic_rule
-ln -s /etc/nginx/sites-available/jeedom_dynamic_rule /etc/nginx/sites-enabled/jeedom_dynamic_rule
-systemctl restart php5-fpm
-systemctl restart nginx
-----
-
-==== Création du cron
-
-----
-echo "* * * * * su --shell=/bin/bash - www-data -c '/usr/bin/php /var/www/html/core/php/jeeCron.php' >> /dev/null" | crontab -
-----
-
-==== Droit root à jeedom
-
-----
-echo "www-data ALL=(ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo)
-----
-
-=== Etape 3 : Ajout des fichiers Jeedom
-
-Il faut ici ajouter les fichiers jeedom dans le répertoire du webserver (par default /var/www) : 
-
-----
-mkdir -p /var/www/html
-rm -rf /root/core-*
-wget https://github.com/jeedom/core/archive/stable.zip -O /tmp/jeedom.zip
-unzip -q /tmp/jeedom.zip -d /root/
-cp -R /root/core-*/* /var/www/html/
-cp -R /root/core-*/.htaccess /var/www/html/
-----
-
-=== Etape 4 : Installation
-
-Il vous suffit d'aller sur IP_MACHINE_JEEDOM
-
-image::../images/install_other.PNG[]
-
-Il faut ensuite remplir les champs en fonction de la ou vous voulez mettre votre base de données. Par defaut vous devez juste mettre le mot de passe tapé précedement puis valider.
+[NOTE]
+Les identifiants par défaut sont admin/admin
 
 Por lo demás se puede seguir la documentación https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
