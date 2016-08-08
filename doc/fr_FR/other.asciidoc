@@ -17,4 +17,19 @@ Il vous suffit ensuite d'aller sur IP_MACHINE_JEEDOM
 [NOTE]
 Les identifiants par défaut sont admin/admin
 
+[NOTE]
+Les arguments suivant sont utilisable :
+-v = version jeedom désirer
+-w = dossier webserver
+-z = installation dependances z-wave
+-m = mot de passe root mysql desirée
+
+-----
+
+./install.sh -v="2.3.16" -w="/var/www/html" -z -m="Jeedom"
+
+-----
+
+
+
 Pour la suite vous pouvez suivre la documentation https://www.jeedom.fr/doc/documentation/premiers-pas/fr_FR/doc-premiers-pas.html[Premier pas avec Jeedom]
