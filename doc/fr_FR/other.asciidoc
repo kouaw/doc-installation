@@ -26,7 +26,7 @@ Les arguments suivant sont utilisable :
 
 -----
 
-./install.sh -v="2.3.16" -w="/var/www/html" -z -m="Jeedom"
+./install.sh -v x.y.zz -w /var/www/html -z -m Jeedom
 
 -----
 
